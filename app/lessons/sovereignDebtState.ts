@@ -1,0 +1,50 @@
+import {canonicalJointPolicyStateExample,lesson318} from './lesson-3-18';
+import {sovereignLabs,sovereignCanonicalInputs,sovereignPathFromControls} from '../components/sovereignLabDefinitions';
+import {sovereignDebtPeriod,sovereignRepricing,sovereignCashFinancing,sovereignFxTranslation,sovereignDatedFunds,sovereignStateWeight} from '../components/sovereignDebtFixtures';
+function required<T>(r:{status:'OK';value:T}|{status:'STOP';reason:string}):T{if(r.status==='STOP')throw Error(`Invalid sovereign canonical: ${r.reason}`);return r.value;}
+const c=sovereignCanonicalInputs;
+export const sovereignCanonicalResults={c1:required(sovereignDebtPeriod(c.c1)),c2:required(sovereignPathFromControls(c.c2)),c3:required(sovereignRepricing(c.c3)),c4:required(sovereignCashFinancing({...c.c4,otherFinancing:0})),c5:required(sovereignFxTranslation(c.c5)),c6:required(sovereignDatedFunds(c.c6)),c7:required(sovereignStateWeight(c.c7))} as const;
+const registeredAt='2026-09-15T22:09:04Z';
+const contextPaths=['schemaVersion','stateId','scopePassport','clockState','unitContract','consolidationState','interestCostState','fiscalBackingState','identificationState','evidenceState','boundaryRoutes'] as const;
+export const canonicalSovereignDebtStateExample={
+ schemaVersion:'sovereign-debt-dated-support-mechanism-state-v1',stateId:'SYNTHETIC_REGISTERED_SOVEREIGN_DEBT_STATE',
+ scopePassport:{registeredAt,scenarios:sovereignLabs.map(l=>({id:l.id,scope:l.assumption})),noCommonCountryTrajectory:true,observedCountry:null,upstreamContextOnly:true},
+ inputLineage:[{producerLessonId:'3.18',producerRevision:lesson318.revision,producerStateId:canonicalJointPolicyStateExample.stateId,producerRevisionMarker:canonicalJointPolicyStateExample.clockState.ownReviewFrozenAt,registrationCutoff:registeredAt,numericCalibration:false,mappings:contextPaths.map(sourcePath=>({sourcePath,targetPath:`upstreamJointPolicyState.${sourcePath}`}))}],
+ upstreamJointPolicyState:canonicalJointPolicyStateExample,
+ semanticPrerequisiteState:{lesson:'3.17',role:'fiscal-execution-and-counterfactual-context',separateDirectNumericalProducer:false,numericalBridge:null},
+ clockState:{informationCutoff:registeredAt,ownReviewFrozenAt:'2026-09-15T22:22:29.700Z',referenceDate:null,firstPublishedAt:null,revisedAt:null,announcementAt:null,executionAt:null,obtainedAt:null,historicalAvailabilityVerified:false,eachExperimentIsIndependent:true},
+ unitContract:{amountGrid:'safe-integer-independent-SYN',amountLimit:1_000_000,rateGrid:'integer-basis-points',probabilityGrid:'integer-percent-0-to-100',stateWeightGrid:'positive-dimensionless-integer-ten-thousandths',oldRatioDenominator:'old-nominal-GDP',primaryRatioDenominator:'current-nominal-GDP',deflator:'GDP-deflator-not-CPI',fxQuote:'domestic-currency-per-one-foreign',contractFeeClock:'new-fee-year-start-replacement-full-year',pathArithmetic:'exact-internal-rational-display-does-not-recur',outputsAutomaticallyRecursive:false},
+ statisticalPerimeterState:{realInstitutionCoverage:null,realInstrumentCoverage:null,realConsolidationBridge:null,nominalFaceMarketAreDistinct:true,centralBankPrincipalExampleIsNotCountryDebtMetric:true},
+ usableAssetState:{input:c.c6,result:sovereignCanonicalResults.c6,realLegalPermission:null,realAssetSaleFeasibility:null},
+ debtPeriodState:{input:c.c1,result:sovereignCanonicalResults.c1,interestRevenue:0,realPolicyCausalEffect:null},
+ finitePathState:{input:c.c2,result:sovereignCanonicalResults.c2,actualFutureRates:null,infiniteHorizonConstraintVerified:false},
+ repricingState:{input:c.c3,result:sovereignCanonicalResults.c3,feeFinancingSolved:false,realBondPrice:null},
+ cashFinancingState:{input:c.c4,result:sovereignCanonicalResults.c4,otherFinancing:0,realIssuance:null,initialDebtNotProvided:true},
+ fxTranslationState:{input:c.c5,result:sovereignCanonicalResults.c5,residencyIsNotCurrency:true,realFxCausalEffect:null},
+ stateWeightState:{input:c.c7,result:sovereignCanonicalResults.c7,weightsAreNotProbabilities:true,realSdfCalibration:null},
+ feasibleFiscalReactionState:{actualReactionCoefficient:null,coefficientClockBridge:null,highDebtSupportVerified:false,politicallyFeasibleAdjustment:null},
+ rolloverState:{realMaturitySchedule:null,committedRealFunds:null,actualMarketCapacity:null,coordinationEquilibriaProven:false},
+ contingentLiabilityState:{realGuaranteeRegister:null,realRealizationProbability:null,classificationVerified:false,eachAmountCountedOnlyOnce:true},
+ bankSovereignState:{realBankExposure:null,realCapitalLiquidityConstraint:null,residualCreditorIsCapacityEvidence:false,causalCrowdingOut:null},
+ centralBankSupportState:{realPermission:null,actualForeignCurrencyCapacity:null,realCredibility:null,allDomesticCurrencyDebtIsDefaultFree:false},
+ serviceFlowState:{realConvenienceYield:null,boundedServiceDemandIsInfiniteCapacity:false,fiscalCashRevenueFromAssetSwap:null},
+ identificationState:{realPriceSpread:null,objectiveDefaultProbability:null,causalFiscalRiskToYield:null,forecastTarget:null,stressEqualsDefault:false,conditionalProbabilityCanBeReversed:false},
+ feedbackState:{feesFiscalResponse:'conditional-unestimated',adjustmentGrowthTaxBase:'conditional-unestimated',quotesRolloverFees:'conditional-unestimated',fullCountryRecursionSolved:false},
+ outputWelfareState:{sovereignSafety:null,defaultOccurred:null,householdWelfare:null,optimalDebtStrategy:null,assetAllocationInstruction:null},
+ evidenceState:{arithmetic:'bounded-SYN-audited-not-independent-content-approval',observedMacroDatasetImported:false,historicalPIT:false,forecastStatus:'not-estimated',causalStatus:'not-identified',allReferencedPapersRead:false,allInfiniteHorizonProofsReplicated:false},
+ dynamicDataPassports:[],
+ boundaryRoutes:[{destination:'3.20',payload:'contract-currency-repricing-and-fiscal-support-context',guardrail:'no-exchange-rate-causal-model-from-fixed-GDP-translation'},{destination:'4.13',payload:'sovereign-quotes-bank-funding-and-contingent-support',guardrail:'no-transmission-from-correlation-alone'},{destination:'5.04',payload:'currency-authority-and-credible-commitment',guardrail:'no-universal-law-or-default-free-label'},{destination:'Chapter7',payload:'targets-perimeters-vintages-and-falsification',guardrail:'no-observed-OOS-or-PIT-from-SYN-audit'}],
+} as const;
+export const canonicalSovereignDebtFields=['schemaVersion','stateId','scopePassport','inputLineage','upstreamJointPolicyState','semanticPrerequisiteState','clockState','unitContract','statisticalPerimeterState','usableAssetState','debtPeriodState','finitePathState','repricingState','cashFinancingState','fxTranslationState','stateWeightState','feasibleFiscalReactionState','rolloverState','contingentLiabilityState','bankSovereignState','centralBankSupportState','serviceFlowState','identificationState','feedbackState','outputWelfareState','evidenceState','dynamicDataPassports','boundaryRoutes'] as const satisfies readonly(keyof typeof canonicalSovereignDebtStateExample)[];
+function pathValue(object:unknown,path:string):{found:boolean;value?:unknown}{let value=object;for(const key of path.split('.')){if(typeof value!=='object'||value===null||!Object.prototype.hasOwnProperty.call(value,key))return{found:false};value=(value as Record<string,unknown>)[key];}return{found:true,value};}
+export function sovereignSameMapping(source:unknown,target:unknown,a:string,b:string){const x=pathValue(source,a),y=pathValue(target,b);return x.found&&y.found&&x.value!==undefined&&y.value!==undefined&&Object.is(x.value,y.value);}
+const s=canonicalSovereignDebtStateExample;
+export const canonicalSovereignDebtAudit=[
+ {key:'all 28 top-level fields exactly covered, no silent extras',passed:Object.keys(s).length===28&&canonicalSovereignDebtFields.length===28&&new Set(canonicalSovereignDebtFields).size===28&&canonicalSovereignDebtFields.every(k=>Object.prototype.hasOwnProperty.call(s,k))},
+ {key:'sole actual sealed 3.18 producer, eleven identity maps, no numeric calibration',passed:s.inputLineage.length===1&&!s.inputLineage[0].numericCalibration&&s.upstreamJointPolicyState===canonicalJointPolicyStateExample&&s.inputLineage[0].producerRevision===lesson318.revision&&lesson318.reviewStatus==='double-reviewed'&&s.inputLineage[0].mappings.length===11&&s.inputLineage[0].mappings.every(m=>sovereignSameMapping(canonicalJointPolicyStateExample,s,m.sourcePath,m.targetPath))},
+ {key:'missing, wrong and equal-clone identity bridges fail',passed:!sovereignSameMapping(s,s,'__missing__','stateId')&&!sovereignSameMapping(canonicalJointPolicyStateExample,s,'scopePassport','upstreamJointPolicyState.evidenceState')&&!sovereignSameMapping({a:{x:1}},{b:{x:1}},'a','b')},
+ {key:'actual upstream approved-body clock precedes registration; no historical PIT implied',passed:Date.parse(s.inputLineage[0].producerRevisionMarker)<=Date.parse(registeredAt)&&s.clockState.informationCutoff===s.scopePassport.registeredAt&&!s.clockState.historicalAvailabilityVerified},
+ {key:'seven independent input records retain identity and no automatic output recursion',passed:s.scopePassport.scenarios.length===7&&s.scopePassport.noCommonCountryTrajectory&&s.debtPeriodState.input===c.c1&&s.finitePathState.input===c.c2&&s.stateWeightState.input===c.c7&&!s.unitContract.outputsAutomaticallyRecursive},
+ {key:'GFN, issuance need, net increase and date funds retain distinct actual meanings',passed:s.cashFinancingState.result.grossFinancingNeed===25&&s.cashFinancingState.result.issuanceNeed===29&&s.cashFinancingState.result.debtNetIncrease===9&&s.usableAssetState.result.gapToday===15&&s.fxTranslationState.result.newTotal===110},
+ {key:'no observed country, PIT, forecast, causal welfare, infinite proof or sovereign safety fabricated',passed:s.dynamicDataPassports.length===0&&!s.evidenceState.observedMacroDatasetImported&&!s.evidenceState.historicalPIT&&s.identificationState.objectiveDefaultProbability===null&&s.outputWelfareState.sovereignSafety===null&&!s.finitePathState.infiniteHorizonConstraintVerified&&s.stateWeightState.realSdfCalibration===null},
+] as const;

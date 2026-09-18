@@ -1,0 +1,6 @@
+'use client';
+import {useState} from 'react';
+import {sovereignScenarios,sovereignOptions,sovereignScenarioInputText} from './sovereignDebtScenarios';
+import {sovereignDisplayValue} from './sovereignLabDefinitions';
+import styles from './sovereignDebt.module.css';
+export default function SovereignQuiz(){const [answers,setAnswers]=useState<Readonly<Record<string,string>>>({});return <>{sovereignScenarios.map(s=>{const options=sovereignOptions(s),selected=options.find(o=>o.id===answers[s.id]);return <article className={styles.question} key={s.id} id={`sovereign-${s.id}`}><span className="section-kicker">{s.id} · INDEPENDENT SYN / SAME K</span><h3>{s.title}</h3><p>{s.question}</p><p><b>完整输入：</b>{sovereignScenarioInputText(s)}。</p><p><b>范围：</b>{s.labId}独立护照；所求单位{s.unit}。先解释对象，再选择数值。</p><ol className={styles.options}>{options.map((o,n)=><li key={o.id}><button type="button" aria-pressed={selected?.id===o.id} onClick={()=>setAnswers(prev=>({...prev,[s.id]:o.id}))}>{'ABC'[n]} · {sovereignDisplayValue(o.value)} {s.unit}</button></li>)}</ol>{selected?<p className={styles.feedback} aria-live="polite" aria-atomic="true"><b>{selected.correct?'通过':'需修改'}：</b>{selected.diagnosis}</p>:null}<p className="section-sources">依据：{s.sourceIds.map(id=><a key={id} href={`#ref-${id}`}>[{id}] </a>)}。合成选择不认证现实政策或安全。</p></article>;})}</>;}

@@ -1,0 +1,24 @@
+.lesson-page[data-lesson-id="3.20"] .reference-list li>div{min-width:0;overflow-wrap:anywhere;}
+@media print{
+ .lesson-page[data-lesson-id="3.20"] .exchange-rate-interactive-only,.lesson-page[data-lesson-id="3.20"] #interactive-lab,.lesson-page[data-lesson-id="3.20"] .lesson-next{display:none!important;}
+ .lesson-page[data-lesson-id="3.20"] .reading-grid{display:block;border:0;}
+ .lesson-page[data-lesson-id="3.20"] .reading-grid>a,.lesson-page[data-lesson-id="3.20"] .reading-grid>article.reading-card{display:block;margin-bottom:12pt;border:1px solid var(--line);break-inside:avoid;page-break-inside:avoid;}
+ .lesson-page[data-lesson-id="3.20"] #reading-list,.lesson-page[data-lesson-id="3.20"] #references,.lesson-page[data-lesson-id="3.20"] .lesson-opening,.lesson-page[data-lesson-id="3.20"] #exchange-static-twins{break-before:page;page-break-before:always;}
+ .lesson-page[data-lesson-id="3.20"] #exchange-static-twins article p{font-size:10pt;line-height:1.6;margin-bottom:7pt;}
+ .lesson-page[data-lesson-id="3.20"] #exchange-static-twins>p{break-after:avoid;page-break-after:avoid;}
+ .lesson-page[data-lesson-id="3.20"] #exchange-cross-interfaces{break-before:page;page-break-before:always;break-after:avoid;page-break-after:avoid;}
+ .lesson-page[data-lesson-id="3.20"] .section-kicker,.lesson-page[data-lesson-id="3.20"] .lesson-section>h2,.lesson-page[data-lesson-id="3.20"] .lesson-section>h3{break-after:avoid;page-break-after:avoid;}
+ .lesson-page[data-lesson-id="3.20"] .lesson-section>h2,.lesson-page[data-lesson-id="3.20"] .lesson-section>h3{break-inside:avoid;page-break-inside:avoid;}
+ .lesson-page[data-lesson-id="3.20"] #checks-glossary .check-grid details,.lesson-page[data-lesson-id="3.20"] #exchange-static-twins details{display:none!important;}
+ .lesson-page[data-lesson-id="3.20"] .check-grid>div,.lesson-page[data-lesson-id="3.20"] .yield-fixture-audit li,.lesson-page[data-lesson-id="3.20"] .precision-note,.lesson-page[data-lesson-id="3.20"] .interface-grid article,.lesson-page[data-lesson-id="3.20"] .evidence-map>div,.lesson-page[data-lesson-id="3.20"] .review-record{break-inside:avoid;page-break-inside:avoid;}
+ .lesson-page[data-lesson-id="3.20"] .lesson-hero h1{font-size:34pt;line-height:1.18;}
+ .lesson-page[data-lesson-id="3.20"] .lesson-section{margin-bottom:26pt;}
+ .lesson-page[data-lesson-id="3.20"] .lesson-article p{margin-bottom:12pt;font-size:11pt;line-height:1.85;}
+ .lesson-page[data-lesson-id="3.20"] .lesson-article h2{margin-bottom:14pt;font-size:20pt;line-height:1.4;}
+ .lesson-page[data-lesson-id="3.20"] .equation-card{margin:18pt 0;padding:14pt 16pt;}
+ .lesson-page[data-lesson-id="3.20"] .equation-card p,.lesson-page[data-lesson-id="3.20"] .precision-note p{font-size:10.5pt;line-height:1.7;}
+ .lesson-page[data-lesson-id="3.20"] .precision-note{padding:12pt 16pt 5pt;}
+ .lesson-page[data-lesson-id="3.20"] .reading-grid>article{padding:14pt;}
+ .lesson-page[data-lesson-id="3.20"] .lesson-layout{padding-bottom:0;}
+ .lesson-page[data-lesson-id="3.20"] .interface-grid{border-left:0;}.lesson-page[data-lesson-id="3.20"] .interface-grid article{border-left:1px solid var(--line);}
+}

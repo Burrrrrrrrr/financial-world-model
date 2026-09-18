@@ -1,0 +1,141 @@
+.diagram {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line, #d5d5cf);
+  border-top: 4px solid var(--red, #ad452f);
+  background: var(--paper-deep, #e9e4d8);
+  color: var(--ink, #1d211f);
+}
+
+.caption,
+.card,
+.feedback,
+.boundary {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.caption h3 {
+  margin: .5rem 0;
+  font-family: var(--font-serif, serif);
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  line-height: 1.25;
+}
+
+.caption p,
+.card p,
+.feedback,
+.boundary {
+  text-align: left;
+}
+
+.kicker {
+  margin: 0;
+  color: var(--red, #ad452f);
+  font-family: var(--font-sans, sans-serif);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .9rem;
+  margin: 1rem 0;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid var(--line, #d5d5cf);
+  border-top: 3px solid var(--red, #ad452f);
+  background: var(--paper, #f3f0e8);
+}
+
+.card > span {
+  display: inline-block;
+  margin-bottom: .35rem;
+  color: var(--red, #ad452f);
+  font-family: var(--font-sans, sans-serif);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.card h4 {
+  margin: 0 0 .55rem;
+  font-family: var(--font-sans, sans-serif);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card p {
+  margin: 0;
+}
+
+.condition {
+  margin-top: .7rem !important;
+  padding-top: .6rem;
+  border-top: 1px solid var(--line, #d5d5cf);
+}
+
+.sources {
+  margin-top: .55rem !important;
+  color: var(--muted, #62655f);
+}
+
+.sources a,
+.boundary a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+}
+
+.sources a:focus-visible,
+.boundary a:focus-visible {
+  outline: 2px solid var(--red, #ad452f);
+  outline-offset: 3px;
+}
+
+.feedback {
+  margin: 0;
+  padding: .85rem 1rem;
+  border-left: 3px solid var(--ink, #1d211f);
+  background: var(--paper, #f3f0e8);
+}
+
+.boundary {
+  margin: .8rem 0 0;
+  color: var(--muted, #62655f);
+}
+
+@media (max-width: 640px) {
+  .cards { grid-template-columns: minmax(0, 1fr); }
+  .diagram { padding: .95rem; }
+}
+
+@media print {
+  .diagram {
+    margin: 1rem 0;
+    padding: 0;
+    color: black;
+    background: white;
+    border: 0;
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+  .caption { break-inside: avoid; page-break-inside: avoid; break-after: avoid; page-break-after: avoid; }
+  .caption h3 { font-size: 15pt; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+  .card,
+  .feedback,
+  .boundary { color: black; background: white; border-color: #777; break-inside: avoid; page-break-inside: avoid; }
+  .card { padding: .7rem; }
+  .card h4 { font-size: 11pt; break-after: avoid; page-break-after: avoid; }
+  .caption > p:not(.kicker),
+  .card p,
+  .feedback,
+  .boundary { font-size: 10.5pt; line-height: 1.5; }
+  .kicker,
+  .sources { color: black; }
+}

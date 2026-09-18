@@ -1,0 +1,80 @@
+.lesson-page[data-lesson-id="3.24"] .reference-list li > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.lesson-page[data-lesson-id="3.24"] .lesson-hero h1 {
+  text-wrap: balance;
+}
+
+.lesson-page[data-lesson-id="3.24"] #macroprudential-evidence-boundaries li,
+.lesson-page[data-lesson-id="3.24"] #macroprudential-evidence-boundaries li > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media screen and (min-width: 641px) {
+  .lesson-page[data-lesson-id="3.24"] .lesson-hero h1 {
+    font-size: clamp(58px, 6.5vw, 94px);
+    letter-spacing: -.05em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .lesson-page[data-lesson-id="3.24"] .lesson-hero h1 {
+    font-size: clamp(42px, 12.8vw, 50px);
+    line-height: 1.08;
+  }
+}
+
+.lesson-page[data-lesson-id="3.24"] [id^="macroprudential-lab-C"],
+.lesson-page[data-lesson-id="3.24"] [id^="macroprudential-M"],
+.lesson-page[data-lesson-id="3.24"] [id^="macroprudential-K"],
+.lesson-page[data-lesson-id="3.24"] #macroprudential-static-twins,
+.lesson-page[data-lesson-id="3.24"] #macroprudential-cross-interfaces {
+  scroll-margin-top: 92px;
+}
+
+@media print {
+  .lesson-page[data-lesson-id="3.24"] .lesson-hero h1 {
+    font-size: 34pt;
+    line-height: 1.18;
+    letter-spacing: -.025em;
+  }
+
+  .lesson-page[data-lesson-id="3.24"] .macroprudential-interactive-only,
+  .lesson-page[data-lesson-id="3.24"] #macroprudential-interactive-quiz,
+  .lesson-page[data-lesson-id="3.24"] .lesson-next { display: none !important; }
+
+  .lesson-page[data-lesson-id="3.24"] #macroprudential-static-twins,
+  .lesson-page[data-lesson-id="3.24"] #reading-list,
+  .lesson-page[data-lesson-id="3.24"] #macroprudential-cross-interfaces { break-before: page; page-break-before: always; }
+
+  .lesson-page[data-lesson-id="3.24"] .section-kicker,
+  .lesson-page[data-lesson-id="3.24"] .lesson-section > h2,
+  .lesson-page[data-lesson-id="3.24"] .lesson-section > h3,
+  .lesson-page[data-lesson-id="3.24"] .precision-note > span { break-after: avoid; page-break-after: avoid; break-inside: avoid; page-break-inside: avoid; }
+
+  .lesson-page[data-lesson-id="3.24"] article[id^="macroprudential-K"],
+  .lesson-page[data-lesson-id="3.24"] .precision-note,
+  .lesson-page[data-lesson-id="3.24"] .section-sources,
+  .lesson-page[data-lesson-id="3.24"] .check-grid > div,
+  .lesson-page[data-lesson-id="3.24"] .yield-fixture-audit li,
+  .lesson-page[data-lesson-id="3.24"] .term-grid .term-card,
+  .lesson-page[data-lesson-id="3.24"] .evidence-map > div,
+  .lesson-page[data-lesson-id="3.24"] .interface-grid article,
+  .lesson-page[data-lesson-id="3.24"] .review-record { break-inside: avoid; page-break-inside: avoid; }
+
+  .lesson-page[data-lesson-id="3.24"] .precision-note > p,
+  .lesson-page[data-lesson-id="3.24"] .section-sources { orphans: 2; widows: 2; }
+
+  .lesson-page[data-lesson-id="3.24"] #macroprudential-checks-glossary .check-grid details { display: none !important; }
+
+  .lesson-page[data-lesson-id="3.24"] .reading-grid { display: block; border: 0; }
+  .lesson-page[data-lesson-id="3.24"] .reading-grid > a,
+  .lesson-page[data-lesson-id="3.24"] .reading-grid > article.reading-card { display: block; margin-bottom: 12pt; padding: 14pt; border: 1px solid var(--line, #aaa); break-inside: avoid; page-break-inside: avoid; }
+  .lesson-page[data-lesson-id="3.24"] .reading-grid > article.reading-card:nth-child(7) { break-before: page; page-break-before: always; }
+  .lesson-page[data-lesson-id="3.24"] .interface-grid { border-left: 0; }
+  .lesson-page[data-lesson-id="3.24"] .interface-grid article { border-left: 1px solid var(--line, #aaa); }
+}

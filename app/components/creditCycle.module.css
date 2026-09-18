@@ -1,0 +1,191 @@
+.official {
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+.panelGrid {
+  display: grid;
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.panel {
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #c9c3b8;
+  background: #f7f1e7;
+}
+
+.panel figcaption {
+  margin: 10px 0 0;
+  color: #59584f;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.panelScroll {
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-gutter: stable;
+}
+
+.panelScroll:focus-visible,
+.tableWrap:focus-visible,
+.lab :global(.yield-data-table-wrap):focus-visible {
+  outline: 3px solid #9b4b43;
+  outline-offset: 3px;
+}
+
+.panelScroll svg {
+  display: block;
+  width: 100%;
+  min-width: 660px;
+  height: auto;
+}
+
+.snapshot {
+  margin: 18px 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.snapshot code,
+.passport code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.tableWrap {
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
+.tableWrap table thead {
+  display: table-header-group;
+}
+
+.tableWrap table tr {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.lab {
+  min-width: 0;
+}
+
+.labOutput {
+  margin-top: 16px;
+}
+
+.lab :global(.holding-return-chain) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.staticTwin {
+  scroll-margin-top: 92px;
+}
+
+.quiz {
+  min-width: 0;
+}
+
+.formulaBreak {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (max-width: 720px) {
+  .panel {
+    padding: 12px 8px;
+  }
+
+  .panelScroll svg {
+    min-width: 620px;
+  }
+
+  .snapshot,
+  .lab :global(.holding-return-chain) {
+    grid-template-columns: 1fr;
+  }
+
+  .official :global(.risk-taking-scroll-hint) {
+    display: block;
+  }
+}
+
+@media print {
+  .quiz > :global(.bank-credit-script-ui) {
+    display: none !important;
+  }
+
+  .quiz > .staticTwin {
+    display: block !important;
+  }
+
+  .staticTwin > :global(.impact-lab-head),
+  .staticTwin > :global(.impact-result) {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .staticTwin > :global(.impact-lab-head) {
+    break-after: avoid-page !important;
+    page-break-after: avoid !important;
+  }
+
+  .official {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .official > :global(.impact-lab-head),
+  .official :global(.fci-g-series-ledger-print) > h4 {
+    break-after: avoid-page !important;
+    page-break-after: avoid !important;
+  }
+
+  .snapshot {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .panelGrid {
+    display: block !important;
+  }
+
+  .panel {
+    margin: 0 0 7mm !important;
+    padding: 3mm !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .panelScroll {
+    overflow: visible !important;
+  }
+
+  .panelScroll svg {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .tableWrap {
+    padding: 0 !important;
+    border: 0 !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .tableWrap table {
+    table-layout: fixed !important;
+  }
+
+  .tableWrap table thead {
+    display: table-header-group !important;
+  }
+
+  .tableWrap table tr {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}

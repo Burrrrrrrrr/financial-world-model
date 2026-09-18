@@ -1,0 +1,408 @@
+.lesson-page[data-lesson-id="4.06"] .reference-list li > div,
+.lesson-page[data-lesson-id="4.06"] .term-card,
+.lesson-page[data-lesson-id="4.06"] .evidence-map > div,
+.lesson-page[data-lesson-id="4.06"] [class*="fixedRecord"],
+.lesson-page[data-lesson-id="4.06"] [class*="recordTail"] {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.lesson-page[data-lesson-id="4.06"] .lesson-hero h1 { text-wrap: balance; }
+.lesson-page[data-lesson-id="4.06"] .reference-accessed-at { white-space: nowrap; }
+.lesson-page[data-lesson-id="4.06"] .lesson-print-index { display: none; }
+.lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"],
+.lesson-page[data-lesson-id="4.06"] [id^="global-banks-mechanism"],
+.lesson-page[data-lesson-id="4.06"] #global-banks-checks,
+.lesson-page[data-lesson-id="4.06"] #global-banks-evidence-research,
+.lesson-page[data-lesson-id="4.06"] #global-banks-cross-interfaces {
+  scroll-margin-top: 92px;
+}
+
+@media screen {
+  .lesson-page[data-lesson-id="4.06"] .precision-note > span {
+    display: block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .global-banks-interactive-only { display: none; }
+  html.global-banks-js .lesson-page[data-lesson-id="4.06"] .global-banks-interactive-only { display: block; }
+  .lesson-page[data-lesson-id="4.06"] .global-banks-nojs-fallback { display: block; }
+  html.global-banks-js .lesson-page[data-lesson-id="4.06"] .global-banks-nojs-fallback { display: none; }
+}
+
+@media (scripting: none) {
+  .lesson-page[data-lesson-id="4.06"] .global-banks-interactive-only { display: none !important; }
+  .lesson-page[data-lesson-id="4.06"] .global-banks-nojs-fallback { display: block !important; }
+}
+
+@media screen and (min-width: 641px) {
+  .lesson-page[data-lesson-id="4.06"] .lesson-hero h1 {
+    font-size: clamp(50px, 5.7vw, 82px);
+    letter-spacing: -.045em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .lesson-page[data-lesson-id="4.06"] .lesson-hero h1 {
+    font-size: clamp(34px, 10.2vw, 46px);
+    line-height: 1.08;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="systemMap"],
+  .lesson-page[data-lesson-id="4.06"] [class*="lab"],
+  .lesson-page[data-lesson-id="4.06"] [class*="quiz"] {
+    max-width: 100%;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="tableWrap"] {
+    max-width: calc(100vw - 48px);
+    scrollbar-gutter: stable;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="formula"] {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media print {
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index {
+    display: block !important;
+    margin: 0;
+    padding: 0 0 10pt;
+    break-before: page;
+    page-break-before: always;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index > p:first-child {
+    margin: 0 0 6pt;
+    font: 700 8pt/1.4 Arial, sans-serif;
+    letter-spacing: .16em;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index h2 {
+    margin: 0 0 5pt;
+    font-size: 20pt;
+    line-height: 1.3;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index-note {
+    margin: 0 0 12pt;
+    font-size: 9pt;
+    line-height: 1.5;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index ol {
+    columns: 2;
+    column-gap: 20pt;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index li {
+    border-bottom: .45pt dotted #aaa;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index a {
+    display: grid;
+    grid-template-columns: 20pt minmax(0, 1fr) 30pt;
+    column-gap: 7pt;
+    align-items: start;
+    padding: 3pt 0;
+    text-decoration: none;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index-order {
+    font: 700 7pt/1.35 Arial, sans-serif;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index-label {
+    font-size: 8.2pt;
+    line-height: 1.35;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-print-index-page {
+    display: inline-block;
+    justify-self: end;
+    box-sizing: border-box;
+    min-width: 4ch;
+    width: auto;
+    padding-left: 4pt;
+    text-align: right;
+    font: 700 8pt/1.35 Arial, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] #references a[data-print-locator]::after,
+  .lesson-page[data-lesson-id="4.06"] #reading-list a[data-print-locator]::after {
+    display: block;
+    margin-top: 4pt;
+    color: #333 !important;
+    content: "来源定位 · " attr(data-print-locator);
+    font: 7.2pt/1.45 Arial, sans-serif;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    text-decoration: none;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] #reading-list .reading-card-links { display: block; }
+  .lesson-page[data-lesson-id="4.06"] #reading-list .reading-card-links a {
+    display: block;
+    margin: 5pt 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-hero h1 {
+    font-size: 30pt;
+    line-height: 1.18;
+    letter-spacing: -.02em;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .global-banks-interactive-only,
+  .lesson-page[data-lesson-id="4.06"] .global-banks-nojs-fallback,
+  .lesson-page[data-lesson-id="4.06"] [class*="dynamic"],
+  .lesson-page[data-lesson-id="4.06"] [class*="liveStatus"],
+  .lesson-page[data-lesson-id="4.06"] [class*="reset"],
+  .lesson-page[data-lesson-id="4.06"] details[class*="static"],
+  .lesson-page[data-lesson-id="4.06"] .yield-fixture-audit,
+  .lesson-page[data-lesson-id="4.06"] .lesson-next {
+    display: none !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="printRecord"],
+  .lesson-page[data-lesson-id="4.06"] [class*="staticQuiz"],
+  .lesson-page[data-lesson-id="4.06"] [class*="answerKey"],
+  .lesson-page[data-lesson-id="4.06"] [class*="printAnswerKey"] {
+    display: block !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] #global-banks-checks,
+  .lesson-page[data-lesson-id="4.06"] #global-banks-evidence-research,
+  .lesson-page[data-lesson-id="4.06"] #global-banks-cross-interfaces,
+  .lesson-page[data-lesson-id="4.06"] #reading-list {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .section-kicker,
+  .lesson-page[data-lesson-id="4.06"] .lesson-section > h2,
+  .lesson-page[data-lesson-id="4.06"] .lesson-section > h3,
+  .lesson-page[data-lesson-id="4.06"] .lesson-section h2,
+  .lesson-page[data-lesson-id="4.06"] .lesson-section h3,
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-mechanism"] > h3,
+  .lesson-page[data-lesson-id="4.06"] .precision-note > span,
+  .lesson-page[data-lesson-id="4.06"] [class*="labLead"] > h3 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .lesson-section > h2,
+  .lesson-page[data-lesson-id="4.06"] .lesson-section > h3,
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-mechanism"] > h3 {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .precision-note,
+  .lesson-page[data-lesson-id="4.06"] .section-sources,
+  .lesson-page[data-lesson-id="4.06"] .term-grid .term-card,
+  .lesson-page[data-lesson-id="4.06"] .evidence-map > div,
+  .lesson-page[data-lesson-id="4.06"] .interface-grid article,
+  .lesson-page[data-lesson-id="4.06"] .review-record,
+  .lesson-page[data-lesson-id="4.06"] [class*="staticQuiz"] article,
+  .lesson-page[data-lesson-id="4.06"] [class*="answerKey"] article,
+  .lesson-page[data-lesson-id="4.06"] [class*="fixedWarning"],
+  .lesson-page[data-lesson-id="4.06"] [class*="boundary"] {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-mechanism"] {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-mechanism"] > :first-child,
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-mechanism"] [class*="formulaGrid"] > div {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="tableWrap"] {
+    max-width: 100% !important;
+    overflow: visible !important;
+    border-radius: 0 !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] table[class*="dataTable"] {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] table[class*="dataTable"] thead {
+    display: table-header-group;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] table[class*="dataTable"] tr {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] table[class*="dataTable"] th,
+  .lesson-page[data-lesson-id="4.06"] table[class*="dataTable"] td {
+    width: auto !important;
+    padding: 4.5pt 5pt !important;
+    font-size: 7.1pt !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] table[class*="dataTable"] caption {
+    padding: 5pt 0 !important;
+    font-size: 7.4pt !important;
+    line-height: 1.4 !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"] {
+    display: contents !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"] > [class*="labLead"] {
+    padding-top: 8pt;
+    border-top: 1pt solid rgba(18, 87, 95, .45);
+    break-before: page;
+    page-break-before: always;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] #global-banks-lab-C1 > [class*="labLead"] {
+    break-before: auto;
+    page-break-before: auto;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"] > [class*="labLead"] > .section-kicker {
+    display: block !important;
+    margin: 0 0 6pt !important;
+    line-height: 1.35;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"] [class*="recordHeading"],
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"] [class*="inputRecord"] > div,
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"] [class*="recordValues"] > div,
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"] [class*="results"] dl > div,
+  .lesson-page[data-lesson-id="4.06"] [id^="global-banks-lab-C"] [class*="recordTail"] {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="printRecord"] {
+    margin: 0 0 12pt !important;
+    padding: 9pt 10pt !important;
+    border: .7pt solid #777 !important;
+    border-radius: 0 !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="inputRecord"],
+  .lesson-page[data-lesson-id="4.06"] [class*="recordValues"],
+  .lesson-page[data-lesson-id="4.06"] [class*="formulaGrid"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 5pt !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="chartRow"] {
+    grid-template-columns: minmax(90pt, .9fr) minmax(120pt, 1.6fr) minmax(65pt, .7fr) !important;
+    gap: 5pt !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="chart"] {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="chart"] figcaption {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="printAnswerKey"] {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="staticQuiz"] article,
+  .lesson-page[data-lesson-id="4.06"] [class*="answerKey"] article {
+    margin: 0 0 8pt !important;
+    padding: 8pt 9pt !important;
+    border-radius: 0 !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="systemMap"] {
+    max-width: 100% !important;
+    padding: 8pt !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] [class*="systemMap"] svg {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 100% !important;
+    max-height: 345pt;
+    height: auto !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .interface-grid[aria-label="4.06跨章接口"] {
+    display: block !important;
+    margin: 12pt 0 18pt;
+    border: 0 !important;
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .interface-grid[aria-label="4.06跨章接口"] article {
+    display: block !important;
+    min-height: 0 !important;
+    margin: 0 0 8pt;
+    padding: 10pt 12pt;
+    border: .75pt solid var(--line, #aaa) !important;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .reading-grid {
+    display: block;
+    border: 0;
+  }
+
+  .lesson-page[data-lesson-id="4.06"] .reading-grid > a,
+  .lesson-page[data-lesson-id="4.06"] .reading-grid > article.reading-card {
+    display: block;
+    margin-bottom: 12pt;
+    padding: 14pt;
+    border: 1px solid var(--line, #aaa);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

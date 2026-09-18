@@ -1,0 +1,60 @@
+.lab,.official { padding: 24px; margin: 30px 0; min-width: 0; border: 1px solid #d2cabd; background: #f5f1e8; }
+.lab h3 { margin-top: 0; font-size: 23px; }
+.assumption,.passport { overflow-wrap: anywhere; font-size: 16px; line-height: 1.8; }
+.controls { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin: 22px 0; }
+.controls label { display: flex; flex-direction: column; gap: 7px; min-width: 0; font-size: 16px; }
+.controls input { box-sizing: border-box; width: 100%; min-height: 44px; padding: 9px 12px; border: 1px solid #8b9289; background: #fffdf8; color: #25302d; font: inherit; }
+.controls input:focus-visible,.reset:focus-visible { outline: 3px solid #bc8b57; outline-offset: 3px; }
+.reset { padding: 10px 16px; min-height: 44px; background: #375f59; color: white; border: 0; font: inherit; cursor: pointer; }
+.results { margin-top: 20px; }
+.results dl,.staticBody dl { margin: 0; }
+.results dl>div,.staticBody dl>div { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap: 18px; padding: 12px 0; border-top: 1px solid #d2cabd; break-inside: avoid; }
+.results dt,.staticBody dt { font-size: 16px; }
+.results dd,.staticBody dd { margin: 0; font-size: 16px; color: #375f59; font-weight: 650; overflow-wrap: anywhere; }
+.staticRecord { margin-top: 20px; }
+.printStaticRecord { display: none; }
+.staticRecord summary,.observations summary { cursor: pointer; font-size: 16px; line-height: 1.8; }
+.staticBody code { overflow-wrap: anywhere; white-space: normal; font-size: 14px; }
+.chart { width: 100%; height: auto; display: block; }
+.official figcaption { font-size: 16px; line-height: 1.8; }
+.markerTable { overflow-x: auto; margin-top: 20px; }
+.markerTable table { border-collapse: collapse; width: 100%; font-size: 16px; line-height: 1.7; }
+.markerTable th,.markerTable td { padding: 10px; border-bottom: 1px solid #d2cabd; text-align: left; vertical-align: top; }
+.markerTable caption { text-align: left; padding-bottom: 10px; font-weight: 650; }
+.observationGrid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 10px; font-size: 14px; margin: 16px 0; }
+.observationGrid span { display: flex; gap: 10px; justify-content: space-between; border-bottom: 1px solid #d2cabd; }
+.quiz { margin: 26px 0; padding: 22px; border: 1px solid #d2cabd; break-inside: avoid; }
+.quiz h3 { margin-top: 0; }
+.quiz fieldset { border: 0; padding: 0; margin: 15px 0; }
+.quiz legend { font-size: 16px; line-height: 1.8; margin-bottom: 12px; }
+.quiz label { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; font-size: 16px; line-height: 1.8; cursor: pointer; }
+.quiz input { margin-top: 8px; min-width: 16px; }
+.quiz button { margin-top: 14px; }
+.feedback { padding: 16px; border-left: 4px solid #375f59; background: #e8eee5; margin-top: 18px; line-height: 1.8; }
+.staticQuiz { margin: 28px 0; padding: 22px; border: 1px solid #d2cabd; break-inside: avoid; }
+.staticQuiz h3 { margin-top: 0; }
+.printAnswer { display: none; }
+@media(max-width: 600px) { .lab,.official { padding: 16px; } .controls { grid-template-columns: 1fr; } .results dl>div,.staticBody dl>div { grid-template-columns: 1fr; gap: 6px; } .observationGrid { grid-template-columns: repeat(2,minmax(0,1fr)); } .chart { min-width: 660px; } .official { overflow-x: auto; } .quiz,.staticQuiz { padding: 16px; } }
+@media print {
+  .dynamic { display: none !important; }
+  .lab,.official { background: white; padding: 10pt; }
+  .lab { margin: 12pt 0; break-inside: avoid; page-break-inside: avoid; }
+  :global(.lesson-page[data-lesson-id="3.16"]) .lab p { margin: 8pt 0; font-size: 10.5pt; line-height: 1.65; text-align: left; }
+  .lab h3 { margin: 0 0 8pt; font-size: 14pt; line-height: 1.5; }
+  .printStaticRecord h4 { margin: 10pt 0 5pt; font-size: 11pt; line-height: 1.55; break-after: avoid; }
+  .staticBody dl>div { padding: 6pt 0; break-inside: avoid; }
+  .staticBody dt,.staticBody dd { font-size: 10.5pt; line-height: 1.55; }
+  .staticBody code { font-size: 10pt; }
+  .official { break-inside: auto; page-break-inside: auto; }
+  .lab h3,.official caption { break-after: avoid; }
+  .staticRecord { display: none; }
+  .printStaticRecord { display: block; }
+  .chart { min-width: 0; width: 100%; }
+  .official { overflow: visible; }
+  .markerTable { overflow: visible; }
+  .markerTable tr { break-inside: avoid; }
+  .observations { display: none; }
+  .staticQuiz details { display: none; }
+  .printAnswer { display: block; }
+  .quiz { display: none; }
+}

@@ -1,0 +1,151 @@
+.sovereign-scope {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  margin: 2rem 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line, #d5d5cf);
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--ink, #1d211f);
+  overflow-wrap: anywhere;
+}
+
+.sovereign-scope .sovereign-scope-kicker {
+  margin: 0 0 0.5rem;
+  color: var(--red, #ad452f);
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.sovereign-scope .sovereign-scope-heading {
+  margin: 0;
+  font-family: var(--font-serif, serif);
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.sovereign-scope .sovereign-scope-description,
+.sovereign-scope .sovereign-scope-gate-body,
+.sovereign-scope .sovereign-scope-connection,
+.sovereign-scope .sovereign-scope-feedback,
+.sovereign-scope .sovereign-scope-boundary {
+  font-family: var(--font-serif, serif);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
+.sovereign-scope .sovereign-scope-description {
+  margin: 0.75rem 0 0;
+}
+
+.sovereign-scope-gates {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sovereign-scope-gate {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--line, #d5d5cf);
+  border-top: 3px solid var(--red, #ad452f);
+  background: var(--paper, #f3f0e8);
+}
+
+.sovereign-scope .sovereign-scope-gate-title {
+  margin: 0 0 0.625rem;
+  font-family: var(--font-sans, sans-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sovereign-scope .sovereign-scope-gate-body {
+  margin: 0;
+}
+
+.sovereign-scope .sovereign-scope-connection {
+  margin: 0.75rem 0 0;
+  padding-top: 0.625rem;
+  border-top: 1px solid var(--line, #d5d5cf);
+}
+
+.sovereign-scope .sovereign-scope-feedback {
+  margin: 0;
+  padding: 0.875rem 1rem;
+  border-left: 3px solid var(--ink, #1d211f);
+  background: var(--paper-deep, #e9e4d8);
+}
+
+.sovereign-scope .sovereign-scope-boundary {
+  margin: 0.875rem 0 0;
+  color: var(--muted, #62655f);
+}
+
+@media (max-width: 600px) {
+  .sovereign-scope-gates {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media print {
+  .sovereign-scope {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    background: white;
+    color: black;
+    border: 0;
+    break-inside: auto;
+  }
+
+  .sovereign-scope-caption {
+    break-inside: avoid;
+    break-after: avoid;
+  }
+
+  .sovereign-scope .sovereign-scope-heading {
+    font-size: 15pt;
+  }
+
+  .sovereign-scope-gates {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.625rem;
+    margin: 0.875rem 0;
+  }
+
+  .sovereign-scope-gate,
+  .sovereign-scope .sovereign-scope-feedback {
+    background: white;
+    border-color: #777;
+    break-inside: avoid;
+  }
+
+  .sovereign-scope-gate {
+    padding: 0.75rem;
+  }
+
+  .sovereign-scope .sovereign-scope-gate-title {
+    font-size: 11pt;
+    break-after: avoid;
+  }
+
+  .sovereign-scope .sovereign-scope-description,
+  .sovereign-scope .sovereign-scope-gate-body,
+  .sovereign-scope .sovereign-scope-connection,
+  .sovereign-scope .sovereign-scope-feedback,
+  .sovereign-scope .sovereign-scope-boundary {
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
+
+  .sovereign-scope .sovereign-scope-kicker,
+  .sovereign-scope .sovereign-scope-boundary {
+    color: black;
+  }
+}

@@ -1,0 +1,368 @@
+:global(.lesson-page[data-lesson-id="4.02"]) .dynamic,
+:global(.lesson-page[data-lesson-id="4.02"]) .static {
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 1.25rem 0;
+  padding: 1.2rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 12px;
+  background: var(--paper, #faf8f2);
+  color: var(--ink, #25231f);
+  overflow-wrap: anywhere;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .dynamic p,
+:global(.lesson-page[data-lesson-id="4.02"]) .static p,
+:global(.lesson-page[data-lesson-id="4.02"]) .diagram p { text-align: left; }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .labLead,
+:global(.lesson-page[data-lesson-id="4.02"]) .labHeader,
+:global(.lesson-page[data-lesson-id="4.02"]) .instructions,
+:global(.lesson-page[data-lesson-id="4.02"]) .passport,
+:global(.lesson-page[data-lesson-id="4.02"]) .fixedRecord,
+:global(.lesson-page[data-lesson-id="4.02"]) .fixedWarning,
+:global(.lesson-page[data-lesson-id="4.02"]) .recordLabel,
+:global(.lesson-page[data-lesson-id="4.02"]) .rebuild,
+:global(.lesson-page[data-lesson-id="4.02"]) .recordTail,
+:global(.lesson-page[data-lesson-id="4.02"]) .sources,
+:global(.lesson-page[data-lesson-id="4.02"]) .answerPaths,
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramCaption,
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramCard,
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramFeedback {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .controls label {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  min-width: 0;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .controls small {
+  font-size: .8rem;
+  line-height: 1.6;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .controls input,
+:global(.lesson-page[data-lesson-id="4.02"]) .controls select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: .6rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 6px;
+  background: var(--paper, #faf8f2);
+  color: inherit;
+  font: inherit;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .controls [aria-invalid="true"] { border-color: var(--red, #a04036); }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .reset,
+:global(.lesson-page[data-lesson-id="4.02"]) .options button {
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: .65rem .9rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 6px;
+  background: var(--paper, #faf8f2);
+  color: inherit;
+  font: inherit;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .reset { margin: 1rem 0; }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .results dl,
+:global(.lesson-page[data-lesson-id="4.02"]) .inputRecord,
+:global(.lesson-page[data-lesson-id="4.02"]) .recordValues { min-width: 0; margin: .7rem 0; }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .results dl > div,
+:global(.lesson-page[data-lesson-id="4.02"]) .inputRecord > div,
+:global(.lesson-page[data-lesson-id="4.02"]) .recordValues > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1rem;
+  justify-content: space-between;
+  min-width: 0;
+  padding: .5rem 0;
+  border-top: 1px solid var(--line, #d8d4ca);
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .results dt,
+:global(.lesson-page[data-lesson-id="4.02"]) .inputRecord dt,
+:global(.lesson-page[data-lesson-id="4.02"]) .recordValues dt,
+:global(.lesson-page[data-lesson-id="4.02"]) .results dd,
+:global(.lesson-page[data-lesson-id="4.02"]) .inputRecord dd,
+:global(.lesson-page[data-lesson-id="4.02"]) .recordValues dd {
+  min-width: 0;
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .results dd,
+:global(.lesson-page[data-lesson-id="4.02"]) .inputRecord dd,
+:global(.lesson-page[data-lesson-id="4.02"]) .recordValues dd { font-weight: 650; }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .recordHeading { margin: 1rem 0 .7rem; font-size: 1rem; line-height: 1.6; }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .static summary {
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: .7rem 0;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .printRecord { display: none; }
+:global(.lesson-page[data-lesson-id="4.02"]) .options { list-style: none !important; margin: .7rem 0 !important; padding: 0 !important; }
+:global(.lesson-page[data-lesson-id="4.02"]) .options li { padding: .4rem 0; }
+:global(.lesson-page[data-lesson-id="4.02"]) .options button { width: 100%; text-align: left; white-space: normal; overflow-wrap: anywhere; }
+:global(.lesson-page[data-lesson-id="4.02"]) .options button[aria-pressed="true"] { border-color: #296b63; box-shadow: inset 0 0 0 1px #296b63; }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .options button:focus-visible,
+:global(.lesson-page[data-lesson-id="4.02"]) .reset:focus-visible,
+:global(.lesson-page[data-lesson-id="4.02"]) .controls input:focus-visible,
+:global(.lesson-page[data-lesson-id="4.02"]) .controls select:focus-visible,
+:global(.lesson-page[data-lesson-id="4.02"]) .static summary:focus-visible,
+:global(.lesson-page[data-lesson-id="4.02"]) .sources a:focus-visible { outline: 3px solid #296b63; outline-offset: 3px; }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .feedback,
+:global(.lesson-page[data-lesson-id="4.02"]) .stop { padding: .7rem; border-left: 3px solid #296b63; }
+:global(.lesson-page[data-lesson-id="4.02"]) .stop { border-left-color: var(--red, #a04036); }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .diagram {
+  box-sizing: border-box;
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line, #d5d5cf);
+  border-top: 4px solid var(--red, #ad452f);
+  background: var(--paper-deep, #e9e4d8);
+  color: var(--ink, #1d211f);
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramCaption h3 {
+  margin: .5rem 0;
+  font-family: var(--font-serif, serif);
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  line-height: 1.25;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramKicker {
+  margin: 0;
+  color: var(--red, #ad452f);
+  font-family: var(--font-sans, sans-serif);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramCards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .9rem;
+  margin: 1rem 0;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramCard {
+  padding: 1rem;
+  border: 1px solid var(--line, #d5d5cf);
+  border-top: 3px solid var(--red, #ad452f);
+  background: var(--paper, #f3f0e8);
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramCard > span {
+  display: inline-block;
+  margin-bottom: .35rem;
+  color: var(--red, #ad452f);
+  font-family: var(--font-sans, sans-serif);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramCard h4 { margin: 0 0 .55rem; font-size: 1rem; line-height: 1.5; }
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramCard p { margin: 0; }
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramGate { margin-top: .7rem !important; padding-top: .6rem; border-top: 1px solid var(--line, #d5d5cf); }
+:global(.lesson-page[data-lesson-id="4.02"]) .diagramFeedback { margin: 0; padding: .85rem 1rem; border-left: 3px solid var(--ink, #1d211f); background: var(--paper, #f3f0e8); }
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route {
+  box-sizing: border-box;
+  margin: 1.5rem 0;
+  padding: 1.2rem;
+  border: 1px solid var(--line, #d5d5cf);
+  border-top: 4px solid #356d62;
+  background: var(--paper-deep, #e9e4d8);
+}
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route > div > span {
+  color: #356d62;
+  font-family: var(--font-sans, sans-serif);
+  font-size: .72rem;
+  font-weight: 750;
+  letter-spacing: .1em;
+}
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route h3 { margin: .45rem 0 .65rem; font-family: var(--font-serif, serif); font-size: 1.35rem; line-height: 1.35; }
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route > div > p,
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route > p { margin: .5rem 0; }
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route li { min-width: 0; padding: .85rem; border: 1px solid var(--line, #d5d5cf); background: var(--paper, #f3f0e8); }
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route li > span { color: #356d62; font-size: .78rem; font-weight: 750; }
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route h4 { margin: .3rem 0; font-size: 1rem; line-height: 1.45; }
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route li p { margin: .35rem 0 0; font-size: .88rem; line-height: 1.65; }
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route a { color: inherit; font-weight: 700; text-decoration: underline; text-underline-offset: .15em; }
+:global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route a:focus-visible { outline: 3px solid #296b63; outline-offset: 3px; }
+:global(.lesson-page[data-lesson-id="4.02"]) .sources { color: var(--muted, #62655f); }
+:global(.lesson-page[data-lesson-id="4.02"]) .sources a { color: inherit; text-decoration: underline; text-underline-offset: .15em; }
+
+:global(.lesson-page[data-lesson-id="4.02"]) .labChart {
+  box-sizing: border-box;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--line, #d8d4ca);
+  background: rgba(255, 255, 255, .34);
+}
+
+:global(.lesson-page[data-lesson-id="4.02"]) .labChart figcaption { display: flex; flex-direction: column; gap: .25rem; margin-bottom: .8rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .labChart figcaption b { font-size: .95rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .labChart figcaption span { color: var(--muted, #62655f); font-size: .82rem; line-height: 1.55; }
+:global(.lesson-page[data-lesson-id="4.02"]) .chartBars { display: grid; gap: .55rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .chartRow { display: grid; grid-template-columns: minmax(7rem, 1fr) minmax(8rem, 3fr) minmax(5.5rem, auto); align-items: center; gap: .7rem; font-size: .82rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .chartRow > span { overflow-wrap: anywhere; }
+:global(.lesson-page[data-lesson-id="4.02"]) .chartRow > b { text-align: right; font-variant-numeric: tabular-nums; }
+:global(.lesson-page[data-lesson-id="4.02"]) .chartTrack { position: relative; height: .7rem; overflow: hidden; border-radius: 999px; background: rgba(37, 35, 31, .1); }
+:global(.lesson-page[data-lesson-id="4.02"]) .chartTrack i { display: block; height: 100%; border-radius: inherit; background: #356d62; }
+:global(.lesson-page[data-lesson-id="4.02"]) .chartTrack .chartWarm { background: #a9553d; }
+:global(.lesson-page[data-lesson-id="4.02"]) .thresholdChart { padding-top: .4rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .thresholdScale,
+:global(.lesson-page[data-lesson-id="4.02"]) .thresholdLegend { display: flex; justify-content: space-between; gap: 1rem; color: var(--muted, #62655f); font-size: .75rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .thresholdTrack { position: relative; height: .85rem; margin: .35rem 0 .55rem; border-radius: 999px; background: linear-gradient(90deg, rgba(169, 85, 61, .28), rgba(53, 109, 98, .34)); }
+:global(.lesson-page[data-lesson-id="4.02"]) .thresholdTrack i { position: absolute; top: -.32rem; width: .18rem; height: 1.5rem; transform: translateX(-50%); background: #24362e; }
+:global(.lesson-page[data-lesson-id="4.02"]) .thresholdTrack .currentMarker { width: .72rem; height: .72rem; top: .065rem; border-radius: 50%; background: #a9553d; }
+:global(.lesson-page[data-lesson-id="4.02"]) .thresholdMarker { display: block; }
+:global(.lesson-page[data-lesson-id="4.02"]) .unreachableThreshold { margin: .55rem 0; padding: .45rem .6rem; border-right: 3px solid #a9553d; color: var(--red, #8a3c24); font-size: .8rem; font-weight: 700; line-height: 1.5; text-align: right; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportPanel { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line, #d8d4ca); }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportPanel > h4 { margin: 0 0 .35rem; font-size: 1rem; line-height: 1.5; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportPanel > p { margin: .35rem 0 .8rem; font-size: .875rem; line-height: 1.65; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportCard { min-width: 0; padding: .8rem; border: 1px solid var(--line, #d8d4ca); border-top: 3px solid #356d62; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportCard h5 { margin: 0 0 .55rem; font-size: .9rem; line-height: 1.5; overflow-wrap: anywhere; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportCard dl { margin: 0; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportCard dl > div { display: grid; grid-template-columns: minmax(7.8rem, .8fr) minmax(0, 1.4fr); gap: .55rem; padding: .38rem 0; border-top: 1px solid var(--line, #d8d4ca); }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportCard dt,
+:global(.lesson-page[data-lesson-id="4.02"]) .passportCard dd { min-width: 0; margin: 0; font-size: .875rem; line-height: 1.55; overflow-wrap: anywhere; word-break: break-word; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportCard dt { font-weight: 700; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportCard code { font: inherit; }
+:global(.lesson-page[data-lesson-id="4.02"]) .passportConclusion { margin-bottom: 0 !important; padding: .65rem .75rem; border-left: 3px solid #356d62; }
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card { min-width: 0; padding: 1rem; border: 1px solid var(--line, #d8d4ca); border-top: 3px solid #356d62; }
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card h3 { margin: 0 0 .4rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card > p { margin: 0 0 .75rem; color: var(--muted, #62655f); font-size: .78rem; overflow-wrap: anywhere; }
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dl { margin: 0; }
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dl > div { display: grid; grid-template-columns: minmax(7.5rem, .85fr) minmax(0, 1.4fr); gap: .55rem; padding: .42rem 0; border-top: 1px solid var(--line, #d8d4ca); }
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dt,
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dd { min-width: 0; margin: 0; font-size: .82rem; line-height: 1.55; overflow-wrap: anywhere; word-break: break-word; }
+:global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dt { font-weight: 700; }
+:global(.lesson-page[data-lesson-id="4.02"]) .timeline { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .45rem; }
+:global(.lesson-page[data-lesson-id="4.02"]) .timeline > div { display: flex; min-width: 0; flex-direction: column; gap: .18rem; padding: .6rem .35rem; border: 1px solid var(--line, #d8d4ca); text-align: center; }
+:global(.lesson-page[data-lesson-id="4.02"]) .timeline > div span,
+:global(.lesson-page[data-lesson-id="4.02"]) .timeline > div em { font-size: .72rem; font-style: normal; }
+:global(.lesson-page[data-lesson-id="4.02"]) .timelineCore { background: rgba(53, 109, 98, .16); border-top: 3px solid #356d62 !important; }
+:global(.lesson-page[data-lesson-id="4.02"]) .timelineEdge { background: rgba(169, 85, 61, .1); border-top: 3px solid #a9553d !important; }
+
+@media (max-width: 640px) {
+  :global(.lesson-page[data-lesson-id="4.02"]) .controls,
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportGrid,
+  :global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-grid,
+  :global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route ol,
+  :global(.lesson-page[data-lesson-id="4.02"]) .diagramCards { grid-template-columns: minmax(0, 1fr); }
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportCard dl > div { grid-template-columns: minmax(0, 1fr); gap: .18rem; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dl > div { grid-template-columns: minmax(0, 1fr); gap: .18rem; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .dynamic,
+  :global(.lesson-page[data-lesson-id="4.02"]) .static,
+  :global(.lesson-page[data-lesson-id="4.02"]) .diagram { padding: .9rem; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .results dl > div,
+  :global(.lesson-page[data-lesson-id="4.02"]) .inputRecord > div,
+  :global(.lesson-page[data-lesson-id="4.02"]) .recordValues > div { flex-direction: column; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .chartRow { grid-template-columns: minmax(0, 1fr) minmax(5rem, 1.5fr); }
+  :global(.lesson-page[data-lesson-id="4.02"]) .chartRow > b { grid-column: 1 / -1; text-align: left; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .timeline { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media print {
+  :global(.lesson-page[data-lesson-id="4.02"]) .dynamic,
+  :global(.lesson-page[data-lesson-id="4.02"]) .static > details,
+  :global(.lesson-page[data-lesson-id="4.02"]) .screenSources { display: none !important; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .printRecord { display: block; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .static { border: 1px solid #888; border-radius: 0; padding: 10pt; break-inside: auto; page-break-inside: auto; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .static p,
+  :global(.lesson-page[data-lesson-id="4.02"]) .static dt,
+  :global(.lesson-page[data-lesson-id="4.02"]) .static dd,
+  :global(.lesson-page[data-lesson-id="4.02"]) .static .options li { font-size: 10pt; line-height: 1.55; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .question,
+  :global(.lesson-page[data-lesson-id="4.02"]) .labLead,
+  :global(.lesson-page[data-lesson-id="4.02"]) .recordHeading,
+  :global(.lesson-page[data-lesson-id="4.02"]) .fixedWarning,
+  :global(.lesson-page[data-lesson-id="4.02"]) .recordLabel,
+  :global(.lesson-page[data-lesson-id="4.02"]) .inputRecord > div,
+  :global(.lesson-page[data-lesson-id="4.02"]) .recordValues > div,
+  :global(.lesson-page[data-lesson-id="4.02"]) .rebuild,
+  :global(.lesson-page[data-lesson-id="4.02"]) .recordTail,
+  :global(.lesson-page[data-lesson-id="4.02"]) .answerPaths p,
+  :global(.lesson-page[data-lesson-id="4.02"]) .options li { break-inside: avoid; page-break-inside: avoid; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .labLead,
+  :global(.lesson-page[data-lesson-id="4.02"]) .recordHeading,
+  :global(.lesson-page[data-lesson-id="4.02"]) .fixedWarning,
+  :global(.lesson-page[data-lesson-id="4.02"]) .recordLabel { break-after: avoid; page-break-after: avoid; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .inputRecord > div,
+  :global(.lesson-page[data-lesson-id="4.02"]) .recordValues > div { flex-direction: row; padding: 3pt 0; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .diagram { margin: 1rem 0; padding: 0; color: black; background: white; border: 0; break-inside: auto; page-break-inside: auto; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .diagramCaption { break-inside: avoid; page-break-inside: avoid; break-after: avoid; page-break-after: avoid; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .diagramCards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .diagramCard,
+  :global(.lesson-page[data-lesson-id="4.02"]) .diagramFeedback { color: black; background: white; border-color: #777; break-inside: avoid; page-break-inside: avoid; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .labChart { color: black; background: white; border-color: #777; break-inside: avoid; page-break-inside: avoid; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportLabChart,
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportPanel { break-inside: auto; page-break-inside: auto; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .chartTrack { box-sizing: border-box; height: 8pt; overflow: hidden; border: 1pt solid #555 !important; border-radius: 0; background: none !important; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .chartTrack i { box-sizing: border-box; height: 100%; border-top: 5pt solid #222 !important; border-right: 1pt solid #222 !important; border-radius: 0; background: none !important; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .chartTrack .chartWarm { border-top-style: double !important; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .thresholdTrack { box-sizing: border-box; height: 9pt; overflow: visible; border: 1pt solid #555 !important; border-radius: 0; background: none !important; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .thresholdTrack .thresholdMarker { box-sizing: border-box; width: 0; border-left: 2pt solid #000 !important; background: none !important; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .thresholdTrack .currentMarker { box-sizing: border-box; border: 2pt solid #000 !important; background: white !important; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .unreachableThreshold { color: #000; border-color: #000; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportGrid { grid-template-columns: minmax(0, 1fr); gap: 7pt; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportCard { padding: 7pt; border-color: #777; border-top: 2pt solid #333; break-inside: avoid-page; page-break-inside: avoid; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportCard dl > div { grid-template-columns: 128pt minmax(0, 1fr); gap: 6pt; padding: 2.5pt 0; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportCard dt,
+  :global(.lesson-page[data-lesson-id="4.02"]) .passportCard dd { font-size: 8.5pt; line-height: 1.4; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-grid { display: block; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card { margin: 0 0 10pt; padding: 8pt; color: black; background: white; border-color: #777; border-top: 2pt solid #333; break-inside: avoid-page; page-break-inside: avoid; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .observedPassportBreak { break-before: page !important; page-break-before: always !important; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dl > div { grid-template-columns: 128pt minmax(0, 1fr); gap: 6pt; padding: 2.5pt 0; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dt,
+  :global(.lesson-page[data-lesson-id="4.02"]) .observed-passport-card dd { font-size: 8.5pt; line-height: 1.4; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route { color: black; background: white; border-color: #777; border-top: 2pt solid #333; break-inside: auto; page-break-inside: auto; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route > div { break-after: avoid; page-break-after: avoid; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route ol { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7pt; }
+  :global(.lesson-page[data-lesson-id="4.02"]) .international-monetary-core-route li { color: black; background: white; border-color: #777; break-inside: avoid; page-break-inside: avoid; }
+}

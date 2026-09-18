@@ -1,0 +1,52 @@
+.lab { min-width:0; margin:30px 0; padding:24px; border:1px solid #d2cabd; background:#f5f1e8; }
+.lab h3 { margin-top:0; font-size:23px; }
+.controls { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:22px 0; }
+.controls label { display:flex; flex-direction:column; gap:7px; min-width:0; font-size:16px; }
+.controls input { box-sizing:border-box; width:100%; min-height:44px; padding:9px 12px; border:1px solid #8b9289; background:#fffdf8; color:#25302d; font:inherit; }
+.reset { min-height:44px; padding:10px 16px; background:#375f59; color:white; border:0; font:inherit; cursor:pointer; }
+.controls input:focus-visible,.reset:focus-visible { outline:3px solid #bc8b57; outline-offset:3px; }
+.results,.fixed { margin-top:20px; }
+.results dl,.fixed dl { margin:0; }
+.results dl>div,.fixed dl>div { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); gap:18px; padding:12px 0; border-top:1px solid #d2cabd; break-inside:avoid; }
+.results dt,.results dd,.fixed dt,.fixed dd { font-size:16px; line-height:1.7; }
+.results dd,.fixed dd { margin:0; color:#375f59; font-weight:650; overflow-wrap:anywhere; }
+.fixed code { white-space:normal; overflow-wrap:anywhere; font-size:14px; }
+.record summary { margin-top:22px; cursor:pointer; font-size:16px; line-height:1.8; }
+.printRecord { display:none; }
+.chart { width:100%; height:auto; display:block; margin-top:20px; }
+.chartFrame { max-width:100%; overflow-x:auto; }
+.chartFrame:focus-visible { outline:3px solid #bc8b57; outline-offset:3px; }
+.chartCaption { font-size:16px; line-height:1.8; }
+.quiz,.staticQuiz { margin:26px 0; padding:22px; border:1px solid #d2cabd; break-inside:avoid; }
+.quiz h3,.staticQuiz h3 { margin-top:0; }
+.quiz p,.staticQuiz p { overflow-wrap:anywhere; }
+.choiceList { list-style:none; padding-left:0; }
+.quiz fieldset { border:0; padding:0; margin:15px 0; }
+.quiz legend,.quiz label { font-size:16px; line-height:1.8; }
+.quiz label { display:flex; align-items:flex-start; gap:12px; padding:10px 0; cursor:pointer; }
+.quiz input { margin-top:8px; min-width:16px; }
+.feedback { padding:16px; border-left:4px solid #375f59; background:#e8eee5; margin-top:18px; line-height:1.8; }
+.printAnswer { display:none; }
+@media(max-width:600px) { .lab { padding:16px; } .controls { grid-template-columns:1fr; } .results dl>div,.fixed dl>div { grid-template-columns:1fr; gap:6px; } .chart { min-width:600px; } }
+@media print {
+ .dynamic { display:none!important; }
+ .lab { background:white; padding:8pt; margin:8pt 0; break-inside:avoid; page-break-inside:avoid; }
+ :global(.lesson-page[data-lesson-id="3.17"]) :global(.lesson-article) .lab p { font-size:10.5pt; line-height:1.65; margin:7pt 0; text-align:left; }
+ .lab h3 { margin:0 0 8pt; font-size:14pt; line-height:1.5; }
+ .record { display:none; }
+ .printRecord { display:block; }
+ .printRecord h4 { font-size:11pt; margin:10pt 0 5pt; break-after:avoid; }
+ .fixed { margin-top:8pt; }
+ .fixed dl>div { padding:4pt 0; break-inside:avoid; }
+ .fixed dt,.fixed dd { font-size:10.5pt; line-height:1.55; }
+ .fixed code { font-size:10pt; }
+ .quiz,.staticQuiz details { display:none; }
+ .printAnswer { display:block; }
+ .staticQuiz { padding:10pt; margin:10pt 0; }
+ .staticQuiz h3 { font-size:14pt; line-height:1.5; margin:0 0 8pt; }
+ :global(.lesson-page[data-lesson-id="3.17"]) .staticQuiz p,
+ :global(.lesson-page[data-lesson-id="3.17"]) .staticQuiz li { font-size:10.5pt; line-height:1.65; margin:7pt 0; text-align:left; }
+ .staticQuiz ol { margin:8pt 0; padding-left:0; list-style:none; }
+ .chartFrame { overflow:visible; }
+ .chart { min-width:0; width:100%; }
+}

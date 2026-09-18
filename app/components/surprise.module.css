@@ -1,0 +1,287 @@
+:global(.lesson-page[data-lesson-id="3.23"]) .dynamic,
+:global(.lesson-page[data-lesson-id="3.23"]) .static {
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 1.2rem 0;
+  padding: 1.2rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 12px;
+  background: var(--paper, #faf8f2);
+  color: var(--ink, #25231f);
+  overflow-wrap: anywhere;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .dynamic p,
+:global(.lesson-page[data-lesson-id="3.23"]) .static p {
+  text-align: left;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .labLead,
+:global(.lesson-page[data-lesson-id="3.23"]) .labHeader,
+:global(.lesson-page[data-lesson-id="3.23"]) .rawInstructions,
+:global(.lesson-page[data-lesson-id="3.23"]) .passport,
+:global(.lesson-page[data-lesson-id="3.23"]) .fixedRecord,
+:global(.lesson-page[data-lesson-id="3.23"]) .fixedWarning,
+:global(.lesson-page[data-lesson-id="3.23"]) .recordLabel,
+:global(.lesson-page[data-lesson-id="3.23"]) .rebuild,
+:global(.lesson-page[data-lesson-id="3.23"]) .recordTail,
+:global(.lesson-page[data-lesson-id="3.23"]) .sources,
+:global(.lesson-page[data-lesson-id="3.23"]) .answerPaths {
+  min-width: 0;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .controls label {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  min-width: 0;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .controls small {
+  font-size: .8rem;
+  line-height: 1.6;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .controls input {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 44px;
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 6px;
+  background: var(--paper, #faf8f2);
+  color: inherit;
+  font: inherit;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .controls input[aria-invalid="true"] {
+  border-color: var(--red, #a04036);
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .reset,
+:global(.lesson-page[data-lesson-id="3.23"]) .options button {
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: .65rem .9rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 6px;
+  background: var(--paper, #faf8f2);
+  color: inherit;
+  font: inherit;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .reset {
+  margin: 1rem 0;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .results dl,
+:global(.lesson-page[data-lesson-id="3.23"]) .inputRecord,
+:global(.lesson-page[data-lesson-id="3.23"]) .recordValues {
+  min-width: 0;
+  margin: .7rem 0;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .results dl > div,
+:global(.lesson-page[data-lesson-id="3.23"]) .inputRecord > div,
+:global(.lesson-page[data-lesson-id="3.23"]) .recordValues > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1rem;
+  justify-content: space-between;
+  min-width: 0;
+  padding: .5rem 0;
+  border-top: 1px solid var(--line, #d8d4ca);
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .results dt,
+:global(.lesson-page[data-lesson-id="3.23"]) .inputRecord dt,
+:global(.lesson-page[data-lesson-id="3.23"]) .recordValues dt,
+:global(.lesson-page[data-lesson-id="3.23"]) .results dd,
+:global(.lesson-page[data-lesson-id="3.23"]) .inputRecord dd,
+:global(.lesson-page[data-lesson-id="3.23"]) .recordValues dd {
+  min-width: 0;
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .results dd,
+:global(.lesson-page[data-lesson-id="3.23"]) .inputRecord dd,
+:global(.lesson-page[data-lesson-id="3.23"]) .recordValues dd {
+  font-weight: 600;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .recordHeading {
+  margin: 1rem 0 .7rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .static summary {
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: .7rem 0;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .printRecord {
+  display: none;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .options {
+  list-style: none !important;
+  margin: .7rem 0 !important;
+  padding: 0 !important;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .options li {
+  padding: .4rem 0;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .options button {
+  width: 100%;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .options button[aria-pressed="true"] {
+  border-color: #296b63;
+  box-shadow: inset 0 0 0 1px #296b63;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .options button:focus-visible,
+:global(.lesson-page[data-lesson-id="3.23"]) .reset:focus-visible,
+:global(.lesson-page[data-lesson-id="3.23"]) .controls input:focus-visible,
+:global(.lesson-page[data-lesson-id="3.23"]) .static summary:focus-visible,
+:global(.lesson-page[data-lesson-id="3.23"]) .sources a:focus-visible {
+  outline: 3px solid #296b63;
+  outline-offset: 3px;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .feedback,
+:global(.lesson-page[data-lesson-id="3.23"]) .stop {
+  padding: .7rem;
+  border-left: 3px solid #296b63;
+}
+
+:global(.lesson-page[data-lesson-id="3.23"]) .stop {
+  border-left-color: var(--red, #a04036);
+}
+
+@media (max-width: 640px) {
+  :global(.lesson-page[data-lesson-id="3.23"]) .controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .dynamic,
+  :global(.lesson-page[data-lesson-id="3.23"]) .static {
+    padding: .9rem;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .results dl > div,
+  :global(.lesson-page[data-lesson-id="3.23"]) .inputRecord > div,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordValues > div {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  :global(.lesson-page[data-lesson-id="3.23"]) .dynamic,
+  :global(.lesson-page[data-lesson-id="3.23"]) .static > details,
+  :global(.lesson-page[data-lesson-id="3.23"]) .screenSources {
+    display: none !important;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .printRecord {
+    display: block;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .static {
+    border: 1px solid #aaa;
+    border-radius: 0;
+    padding: 10pt;
+    break-inside: auto;
+    page-break-inside: auto;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .static p,
+  :global(.lesson-page[data-lesson-id="3.23"]) .static dt,
+  :global(.lesson-page[data-lesson-id="3.23"]) .static dd,
+  :global(.lesson-page[data-lesson-id="3.23"]) .static .options li {
+    font-size: 10pt;
+    line-height: 1.6;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .static p {
+    margin-top: 0;
+    margin-bottom: 7pt;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .static.question,
+  :global(.lesson-page[data-lesson-id="3.23"]) .labLead,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordHeading,
+  :global(.lesson-page[data-lesson-id="3.23"]) .fixedWarning,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordLabel,
+  :global(.lesson-page[data-lesson-id="3.23"]) .inputRecord > div,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordValues > div,
+  :global(.lesson-page[data-lesson-id="3.23"]) .rebuild,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordTail,
+  :global(.lesson-page[data-lesson-id="3.23"]) .answerPaths p,
+  :global(.lesson-page[data-lesson-id="3.23"]) .options li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .labLead,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordHeading,
+  :global(.lesson-page[data-lesson-id="3.23"]) .fixedWarning,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordLabel {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordTail {
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .fixedRecord,
+  :global(.lesson-page[data-lesson-id="3.23"]) .inputRecord,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordValues {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .inputRecord > div,
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordValues > div {
+    flex-direction: row;
+    padding: 3pt 0;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .recordHeading {
+    margin-top: 7pt;
+    margin-bottom: 7pt;
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+
+  :global(.lesson-page[data-lesson-id="3.23"]) .options li {
+    padding: 3pt 0;
+  }
+}

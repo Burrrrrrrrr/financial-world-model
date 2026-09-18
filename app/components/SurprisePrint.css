@@ -1,0 +1,140 @@
+.lesson-page[data-lesson-id="3.23"] .reference-list li > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.lesson-page[data-lesson-id="3.23"] .lesson-hero h1,
+.lesson-page[data-lesson-id="3.23"] .lesson-article h2 {
+  text-wrap: balance;
+}
+
+.lesson-page[data-lesson-id="3.23"] .lesson-hero h1 {
+  max-width: 980px;
+  font-size: clamp(52px, 6vw, 92px);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.lesson-page[data-lesson-id="3.23"] [id^="surprise-lab-C"],
+.lesson-page[data-lesson-id="3.23"] [id^="surprise-M"],
+.lesson-page[data-lesson-id="3.23"] [id^="surprise-K"],
+.lesson-page[data-lesson-id="3.23"] #surprise-static-twins,
+.lesson-page[data-lesson-id="3.23"] #surprise-cross-interfaces {
+  scroll-margin-top: 92px;
+}
+
+@media print {
+  .lesson-page[data-lesson-id="3.23"] .surprise-interactive-only,
+  .lesson-page[data-lesson-id="3.23"] #surprise-interactive-quiz,
+  .lesson-page[data-lesson-id="3.23"] .lesson-next {
+    display: none !important;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] #surprise-static-twins,
+  .lesson-page[data-lesson-id="3.23"] #reading-list {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] .lesson-article h2 {
+    font-size: 19pt;
+    line-height: 1.42;
+    letter-spacing: -.02em;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] #surprise-static-twins > p,
+  .lesson-page[data-lesson-id="3.23"] .section-kicker,
+  .lesson-page[data-lesson-id="3.23"] .lesson-section > h2,
+  .lesson-page[data-lesson-id="3.23"] .lesson-section > h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] #surprise-cross-interfaces {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] #surprise-evidence-boundaries > p,
+  .lesson-page[data-lesson-id="3.23"] #surprise-cross-interfaces + .interface-grid + p {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] aside[id^="surprise-lab-C"] p,
+  .lesson-page[data-lesson-id="3.23"] aside[id^="surprise-lab-C"] dt,
+  .lesson-page[data-lesson-id="3.23"] aside[id^="surprise-lab-C"] dd,
+  .lesson-page[data-lesson-id="3.23"] article[id^="surprise-K"] p,
+  .lesson-page[data-lesson-id="3.23"] article[id^="surprise-K"] ol li {
+    font-size: 10pt;
+    line-height: 1.6;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] aside[id^="surprise-lab-C"] p,
+  .lesson-page[data-lesson-id="3.23"] article[id^="surprise-K"] p {
+    margin-top: 0;
+    margin-bottom: 7pt;
+    text-align: left;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] article[id^="surprise-K"],
+  .lesson-page[data-lesson-id="3.23"] .precision-note,
+  .lesson-page[data-lesson-id="3.23"] .section-sources,
+  .lesson-page[data-lesson-id="3.23"] .check-grid > div,
+  .lesson-page[data-lesson-id="3.23"] .yield-fixture-audit li,
+  .lesson-page[data-lesson-id="3.23"] .term-grid .term-card,
+  .lesson-page[data-lesson-id="3.23"] .interface-grid article,
+  .lesson-page[data-lesson-id="3.23"] .review-record {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] .precision-note > span {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] .precision-note > p,
+  .lesson-page[data-lesson-id="3.23"] .section-sources {
+    orphans: 2;
+    widows: 2;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] #surprise-checks-glossary .check-grid details {
+    display: none !important;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] .reading-grid {
+    display: block;
+    border: 0;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] .reading-grid > a,
+  .lesson-page[data-lesson-id="3.23"] .reading-grid > article.reading-card {
+    display: block;
+    margin-bottom: 12pt;
+    padding: 14pt;
+    border: 1px solid var(--line, #aaa);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] .interface-grid {
+    border-left: 0;
+  }
+
+  .lesson-page[data-lesson-id="3.23"] .interface-grid article {
+    border-left: 1px solid var(--line, #aaa);
+  }
+}
+
+@media (max-width: 900px) {
+  .lesson-page[data-lesson-id="3.23"] .lesson-hero h1 {
+    font-size: clamp(44px, 10vw, 64px);
+    line-height: 1.1;
+  }
+}

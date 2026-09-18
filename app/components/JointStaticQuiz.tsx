@@ -1,0 +1,5 @@
+import {jointScenarios,jointOptions,jointScenarioInputText} from './jointPolicyScenarios';
+import {jointDisplayValue} from './jointLabDefinitions';
+import styles from './jointPolicy.module.css';
+function AnswerPaths({s}:{s:(typeof jointScenarios)[number]}){return <>{jointOptions(s).map((o,n)=><p key={o.id}><b>{'ABC'[n]} · {o.correct?'正确':'为什么错'}：</b>{o.diagnosis}</p>)}</>;}
+export default function JointStaticQuiz(){return <>{jointScenarios.map((s,i)=><article key={s.id} id={`joint-K${i+1}`} className={styles.question}><span className="section-kicker">K{i+1} · SAME {s.id} / INDEPENDENT SYN</span><h3>{s.title}</h3><p>{s.question}</p><p><b>完整输入：</b>{jointScenarioInputText(s)}。</p><p><b>范围：</b>{s.labId}同一护照；答案量纲：{s.unit}。</p><ol className={styles.options}>{jointOptions(s).map((o,n)=><li key={o.id}><b>{'ABC'[n]} · </b>{jointDisplayValue(o.value)} {s.unit}</li>)}</ol><details><summary>K{i+1}答案与两条错路径</summary><AnswerPaths s={s}/></details><div className={styles.printRecord}><AnswerPaths s={s}/></div><p className="section-sources">机制依据：{s.sourceIds.map(id=><a key={id} href={`#ref-${id}`}>[{id}] </a>)}。数值为本题独立SYN，不是观察估计。</p></article>)}</>;}

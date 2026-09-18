@@ -1,0 +1,158 @@
+.lesson-page[data-lesson-id="3.22"] .reference-list li > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.lesson-page[data-lesson-id="3.22"] [id^="cycle-lab-C"],
+.lesson-page[data-lesson-id="3.22"] #cycle-static-twins,
+.lesson-page[data-lesson-id="3.22"] #cycle-cross-interfaces {
+  scroll-margin-top: 92px;
+}
+
+@media print {
+  .lesson-page[data-lesson-id="3.22"] .cycle-interactive-only,
+  .lesson-page[data-lesson-id="3.22"] #cycle-interactive-quiz,
+  .lesson-page[data-lesson-id="3.22"] .lesson-next {
+    display: none !important;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .lesson-opening,
+  .lesson-page[data-lesson-id="3.22"] #cycle-static-twins,
+  .lesson-page[data-lesson-id="3.22"] #references,
+  .lesson-page[data-lesson-id="3.22"] #reading-list {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] #cycle-static-twins > p {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] #cycle-cross-interfaces {
+    break-before: page;
+    page-break-before: always;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .section-kicker,
+  .lesson-page[data-lesson-id="3.22"] .lesson-section > h2,
+  .lesson-page[data-lesson-id="3.22"] .lesson-section > h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .lesson-hero h1 {
+    font-size: 34pt;
+    line-height: 1.18;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .lesson-section {
+    margin-bottom: 26pt;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .lesson-article p {
+    margin-bottom: 12pt;
+    font-size: 11pt;
+    line-height: 1.85;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .lesson-article h2 {
+    margin-bottom: 14pt;
+    font-size: 20pt;
+    line-height: 1.4;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .equation-card {
+    margin: 12pt 0;
+    padding: 12pt 16pt;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .equation-card > div {
+    margin: 10pt 0;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .equation-card p,
+  .lesson-page[data-lesson-id="3.22"] .precision-note p {
+    font-size: 10.5pt;
+    line-height: 1.7;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .equation-card p {
+    margin: 6pt 0 0;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .precision-note {
+    margin-top: 12pt;
+    padding: 10pt 16pt 5pt;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .precision-note p {
+    margin: 6pt 0;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .lesson-section > .equation-card + .precision-note {
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] aside[id^="cycle-lab-C"] p,
+  .lesson-page[data-lesson-id="3.22"] aside[id^="cycle-lab-C"] dt,
+  .lesson-page[data-lesson-id="3.22"] aside[id^="cycle-lab-C"] dd,
+  .lesson-page[data-lesson-id="3.22"] article[id^="cycle-K"] p,
+  .lesson-page[data-lesson-id="3.22"] article[id^="cycle-K"] ol li {
+    font-size: 10pt;
+    line-height: 1.6;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] aside[id^="cycle-lab-C"] p,
+  .lesson-page[data-lesson-id="3.22"] article[id^="cycle-K"] p {
+    margin-top: 0;
+    margin-bottom: 7pt;
+    text-align: left;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] #checks-glossary .check-grid details {
+    display: none !important;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .check-grid > div,
+  .lesson-page[data-lesson-id="3.22"] .yield-fixture-audit li,
+  .lesson-page[data-lesson-id="3.22"] .precision-note,
+  .lesson-page[data-lesson-id="3.22"] .interface-grid article,
+  .lesson-page[data-lesson-id="3.22"] .evidence-map > div,
+  .lesson-page[data-lesson-id="3.22"] .review-record {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .reading-grid {
+    display: block;
+    border: 0;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .reading-grid > a,
+  .lesson-page[data-lesson-id="3.22"] .reading-grid > article.reading-card {
+    display: block;
+    margin-bottom: 12pt;
+    padding: 14pt;
+    border: 1px solid var(--line, #aaa);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .interface-grid {
+    border-left: 0;
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .interface-grid article {
+    border-left: 1px solid var(--line, #aaa);
+  }
+
+  .lesson-page[data-lesson-id="3.22"] .lesson-layout {
+    padding-bottom: 0;
+  }
+}

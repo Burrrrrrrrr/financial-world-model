@@ -1,0 +1,6 @@
+import {sovereignScenarios,sovereignOptions,sovereignScenarioInputText} from './sovereignDebtScenarios';
+import type {SovereignScenario} from './sovereignDebtScenarios';
+import {sovereignDisplayValue} from './sovereignLabDefinitions';
+import styles from './sovereignDebt.module.css';
+function AnswerPaths({s}:{s:SovereignScenario}){return <>{sovereignOptions(s).map((o,n)=><p key={o.id}><b>{'ABC'[n]} · {o.correct?'正确':'为什么错'}：</b>{o.diagnosis}</p>)}</>;}
+export default function SovereignStaticQuiz(){return <>{sovereignScenarios.map((s,i)=><article className={styles.question} key={s.id} id={`sovereign-K${i+1}`}><span className="section-kicker">K{i+1} · SAME {s.id} / NATIVE / PRINT</span><h3>{s.title}</h3><p>{s.question}</p><p><b>完整输入：</b>{sovereignScenarioInputText(s)}。</p><p><b>范围：</b>{s.labId}同一独立护照；所求单位{s.unit}。</p><ol className={styles.options}>{sovereignOptions(s).map((o,n)=><li key={o.id}><b>{'ABC'[n]} · </b>{sovereignDisplayValue(o.value)} {s.unit}</li>)}</ol><details><summary>K{i+1}答案与两条错路径</summary><AnswerPaths s={s}/></details><div className={styles.printRecord}><AnswerPaths s={s}/></div><p className="section-sources">依据：{s.sourceIds.map(id=><a key={id} href={`#ref-${id}`}>[{id}] </a>)}。只作本题独立SYN。</p></article>)}</>;}

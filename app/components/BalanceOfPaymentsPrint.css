@@ -1,0 +1,207 @@
+.lesson-page[data-lesson-id="4.01"] .reference-list li > div,
+.lesson-page[data-lesson-id="4.01"] #balance-of-payments-evidence-boundaries li,
+.lesson-page[data-lesson-id="4.01"] #balance-of-payments-evidence-boundaries li > span {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.lesson-page[data-lesson-id="4.01"] .lesson-hero h1 {
+  text-wrap: balance;
+}
+
+.lesson-page[data-lesson-id="4.01"] .balance-of-payments-archive-path {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+.lesson-page[data-lesson-id="4.01"] .reference-accessed-at {
+  white-space: nowrap;
+}
+
+.lesson-page[data-lesson-id="4.01"] #thesis .impact-facts {
+  border-top-color: rgba(29, 33, 31, .22);
+  border-left-color: rgba(29, 33, 31, .22);
+}
+
+.lesson-page[data-lesson-id="4.01"] #thesis .impact-facts article {
+  border-right-color: rgba(29, 33, 31, .22);
+  border-bottom-color: rgba(29, 33, 31, .22);
+  background: rgba(255, 255, 255, .2);
+}
+
+.lesson-page[data-lesson-id="4.01"] #thesis .impact-facts span {
+  color: #8a3c24;
+}
+
+.lesson-page[data-lesson-id="4.01"] #thesis .impact-facts b {
+  color: #24362e;
+}
+
+.lesson-page[data-lesson-id="4.01"] #thesis .impact-facts p {
+  color: #485049;
+}
+
+.lesson-page[data-lesson-id="4.01"] [id^="balance-of-payments-lab-C"],
+.lesson-page[data-lesson-id="4.01"] [id^="balance-of-payments-M"],
+.lesson-page[data-lesson-id="4.01"] [id^="balance-of-payments-K"],
+.lesson-page[data-lesson-id="4.01"] #balance-of-payments-static-twins,
+.lesson-page[data-lesson-id="4.01"] #balance-of-payments-cross-interfaces {
+  scroll-margin-top: 92px;
+}
+
+@media screen and (min-width: 641px) {
+  .lesson-page[data-lesson-id="4.01"] .lesson-hero h1 {
+    font-size: clamp(52px, 6vw, 86px);
+    letter-spacing: -.045em;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .lesson-page[data-lesson-id="4.01"] .lesson-hero h1 {
+    font-size: clamp(38px, 11.5vw, 48px);
+    line-height: 1.08;
+  }
+}
+
+@media print {
+  .lesson-page[data-lesson-id="4.01"] #thesis .impact-facts {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .lesson-hero h1 {
+    font-size: 32pt;
+    line-height: 1.18;
+    letter-spacing: -.02em;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .balance-of-payments-archive-path {
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
+    font-size: 7.4pt;
+    letter-spacing: -.02em;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .balance-of-payments-interactive-only,
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-interactive-quiz,
+  .lesson-page[data-lesson-id="4.01"] .lesson-next {
+    display: none !important;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-static-twins,
+  .lesson-page[data-lesson-id="4.01"] #reading-list,
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-cross-interfaces {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .section-kicker,
+  .lesson-page[data-lesson-id="4.01"] .lesson-section > h2,
+  .lesson-page[data-lesson-id="4.01"] .lesson-section > h3,
+  .lesson-page[data-lesson-id="4.01"] .precision-note > span {
+    break-after: avoid;
+    page-break-after: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] article[id^="balance-of-payments-K"],
+  .lesson-page[data-lesson-id="4.01"] .precision-note,
+  .lesson-page[data-lesson-id="4.01"] .section-sources,
+  .lesson-page[data-lesson-id="4.01"] .check-grid > div,
+  .lesson-page[data-lesson-id="4.01"] .yield-fixture-audit li,
+  .lesson-page[data-lesson-id="4.01"] .term-grid .term-card,
+  .lesson-page[data-lesson-id="4.01"] .evidence-map > div,
+  .lesson-page[data-lesson-id="4.01"] .interface-grid article,
+  .lesson-page[data-lesson-id="4.01"] .review-record {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] article[id^="balance-of-payments-K"] {
+    padding-top: 12pt !important;
+    border-top: 1pt solid #666 !important;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-K3,
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-K5,
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-K7,
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-K9 {
+    margin-top: 0 !important;
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .precision-note > p,
+  .lesson-page[data-lesson-id="4.01"] .section-sources {
+    orphans: 2;
+    widows: 2;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-checks-glossary .check-grid details {
+    display: none !important;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-checks-glossary .term-grid {
+    display: block;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] #balance-of-payments-checks-glossary .term-grid .term-card {
+    display: block;
+    width: 100%;
+    min-height: 0;
+    margin: 0 0 10pt;
+    padding: 12pt 14pt;
+    border-top: 3pt solid #6d8177 !important;
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .reading-grid {
+    display: block;
+    border: 0;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .reading-grid > a,
+  .lesson-page[data-lesson-id="4.01"] .reading-grid > article.reading-card {
+    display: block;
+    margin-bottom: 12pt;
+    padding: 14pt;
+    border: 1px solid var(--line, #aaa);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .reading-grid > article.reading-card:nth-child(6) {
+    margin-top: 0;
+    padding-top: 16pt;
+    border-top: 1pt solid var(--line, #777);
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .interface-grid {
+    border-top: 0;
+    border-left: 0;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .interface-grid article {
+    border-top: 1px solid var(--line, #aaa);
+    border-left: 1px solid var(--line, #aaa);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .lesson-page[data-lesson-id="4.01"] .interface-grid article:nth-child(7) {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+}

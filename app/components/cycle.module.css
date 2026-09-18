@@ -1,0 +1,284 @@
+.dynamic,
+.static {
+  min-width: 0;
+  margin: 1.2rem 0;
+  padding: 1.2rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 12px;
+  color: var(--ink, #25231f);
+  overflow-wrap: anywhere;
+}
+
+.dynamic p,
+.static p {
+  text-align: left;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  min-width: 0;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.controls small {
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+.controls input {
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 6px;
+  background: var(--paper, #faf8f2);
+  color: inherit;
+  font: inherit;
+}
+
+.controls input[aria-invalid="true"] {
+  border-color: var(--red, #a04036);
+}
+
+.reset,
+.options button {
+  box-sizing: border-box;
+  padding: .65rem .9rem;
+  border: 1px solid var(--line, #d8d4ca);
+  border-radius: 6px;
+  background: var(--paper, #faf8f2);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.reset {
+  margin: 1rem 0;
+}
+
+.results dl,
+.inputRecord,
+.recordValues {
+  min-width: 0;
+  margin: .7rem 0;
+}
+
+.results dl > div,
+.inputRecord > div,
+.recordValues > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1rem;
+  justify-content: space-between;
+  min-width: 0;
+  padding: .5rem 0;
+  border-top: 1px solid var(--line, #d8d4ca);
+}
+
+.results dt,
+.inputRecord dt,
+.recordValues dt {
+  min-width: 0;
+  font-size: .88rem;
+  line-height: 1.6;
+}
+
+.results dd,
+.inputRecord dd,
+.recordValues dd {
+  min-width: 0;
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.6;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.labLead,
+.labHeader,
+.rawInstructions,
+.passport,
+.fixedRecord,
+.fixedWarning,
+.recordLabel,
+.rebuild,
+.recordTail,
+.sources,
+.answerPaths {
+  min-width: 0;
+}
+
+.recordHeading {
+  margin: 1rem 0 .7rem;
+  font-size: 1rem;
+}
+
+.static summary {
+  padding: .7rem 0;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.printRecord {
+  display: none;
+}
+
+.options {
+  list-style: none !important;
+  margin: .7rem 0 !important;
+  padding: 0 !important;
+}
+
+.options li {
+  padding: .4rem 0;
+}
+
+.options button {
+  width: 100%;
+  text-align: left;
+  line-height: 1.6;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.options button[aria-pressed="true"] {
+  border-color: #296b63;
+  box-shadow: inset 0 0 0 1px #296b63;
+}
+
+.options button:focus-visible,
+.reset:focus-visible,
+.controls input:focus-visible,
+.static summary:focus-visible,
+.sources a:focus-visible {
+  outline: 3px solid #296b63;
+  outline-offset: 3px;
+}
+
+.feedback,
+.stop {
+  padding: .7rem;
+  border-left: 3px solid #296b63;
+}
+
+.stop {
+  border-left-color: var(--red, #a04036);
+}
+
+@media (max-width: 640px) {
+  .controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dynamic,
+  .static {
+    padding: .9rem;
+  }
+
+  .results dl > div,
+  .inputRecord > div,
+  .recordValues > div {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .dynamic,
+  .static > details,
+  .screenSources {
+    display: none !important;
+  }
+
+  .printRecord {
+    display: block;
+  }
+
+  .static {
+    border: 1px solid #aaa;
+    border-radius: 0;
+    padding: 10pt;
+    break-inside: auto;
+    page-break-inside: auto;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .static p,
+  .static dt,
+  .static dd,
+  .static .options li {
+    font-size: 10pt;
+    line-height: 1.6;
+  }
+
+  .static p {
+    margin-top: 0;
+    margin-bottom: 7pt;
+  }
+
+  .static.question {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .labLead,
+  .recordHeading,
+  .fixedWarning,
+  .recordLabel,
+  .inputRecord > div,
+  .recordValues > div,
+  .rebuild,
+  .recordTail,
+  .answerPaths p,
+  .options li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .labLead,
+  .recordHeading,
+  .fixedWarning,
+  .recordLabel {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .recordTail {
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+
+  .fixedRecord,
+  .inputRecord,
+  .recordValues {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .inputRecord > div,
+  .recordValues > div {
+    flex-direction: row;
+    padding: 3pt 0;
+  }
+
+  .recordHeading {
+    margin-top: 7pt;
+    margin-bottom: 7pt;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  .options li {
+    padding: 3pt 0;
+  }
+}
