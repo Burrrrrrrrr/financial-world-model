@@ -298,7 +298,7 @@ export const lesson406: LessonRecord = {
   reviewStatus: 'double-reviewed',
   reviews: lesson406Reviews,
   previous: { slug: '4-05', label: '4.05 Global Dollar Funding' },
-  next: { label: '4.07 Global Financial Cycle' },
+  next: { slug: '4-07', label: '4.07 Global Financial Cycle' },
   sections: [
     { id: 'thesis', label: '核心命题' },
     extras[0],

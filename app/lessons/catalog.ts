@@ -82,4 +82,5 @@ export const lessonCatalog: Record<string, LessonCatalogEntry> = {
   '4.04': { slug: '4-04', status: 'double-reviewed' },
   '4.05': { slug: '4-05', status: 'double-reviewed' },
   '4.06': { slug: '4-06', status: 'double-reviewed' },
+  '4.07': { slug: '4-07', status: 'double-reviewed' },
 };

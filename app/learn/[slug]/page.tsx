@@ -16,7 +16,7 @@ const readingPaths = [
   { id: 'rules' as const, label: '法域规则', intro: (count: number) => `这 ${count} 项按本节实际涉及的主体、产品和法域分支排列；不要把不同规则串成一条全球标准。` },
 ];
 
-const publicationPrintLessonIds = new Set(['4.02', '4.03', '4.04', '4.05', '4.06']);
+const publicationPrintLessonIds = new Set(['4.02', '4.03', '4.04', '4.05', '4.06', '4.07']);
 const interactivePrintSectionIds = new Set([
   'international-monetary-interactive-section',
   'safe-asset-interactive-section',
@@ -182,14 +182,14 @@ export default async function LessonPage({ params }: LessonPageProps) {
             <nav className="lesson-print-index" id="lesson-print-index" aria-label={`${lesson.id}纸面目录`}>
               <p>PRINT INDEX · 纸面目录</p>
               <h2>主要板块与机制索引</h2>
-              <p className="lesson-print-index-note">页码对应本次PDF；数字版可点击条目跳转。</p>
+              <p className="lesson-print-index-note">数字版可点击条目跳转；浏览器直接打印不显示未经分页器确认的页码，正式PDF可在排版后写入真实页码。</p>
               <ol>
                 {printIndexSections.map((section, index) => (
                   <li key={section.id}>
                     <a href={`#${section.id}`}>
                       <span className="lesson-print-index-order">{String(index + 1).padStart(2, '0')}</span>
                       <span className="lesson-print-index-label">{section.label}</span>
-                      <span className="lesson-print-index-page" data-print-page-for={section.id}>000</span>
+                      <span className="lesson-print-index-page" data-print-page-for={section.id} />
                     </a>
                   </li>
                 ))}

@@ -75,6 +75,7 @@ import { lesson403 } from './lesson-4-03';
 import { lesson404 } from './lesson-4-04';
 import { lesson405 } from './lesson-4-05';
 import { lesson406 } from './lesson-4-06';
+import { lesson407 } from './lesson-4-07';
 import type { LessonRecord } from './types';
 
 export const lessonRegistry: Record<string, LessonRecord> = {
@@ -156,4 +157,5 @@ export const lessonRegistry: Record<string, LessonRecord> = {
   [lesson404.slug]: lesson404,
   [lesson405.slug]: lesson405,
   [lesson406.slug]: lesson406,
+  [lesson407.slug]: lesson407,
 };

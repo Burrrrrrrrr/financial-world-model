@@ -5,6 +5,7 @@
 @import './components/TreasuryCurvePrint.css';
 @import './components/DollarFundingPrint.css';
 @import './components/GlobalBanksPrint.css';
+@import './components/GlobalCyclePrint.css';
 
 :root {
   --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
