@@ -263,7 +263,7 @@ export const lesson408: LessonRecord = {
   reviewStatus: 'double-reviewed',
   reviews: lesson408Reviews,
   previous: { slug: '4-07', label: '4.07 Global Financial Cycle' },
-  next: { label: '4.09 Trilemma / Dilemma 与政策自主性' },
+  next: { slug: '4-09', label: '4.09 Trilemma / Dilemma 与政策自主性' },
   sections: [
     { id: 'thesis', label: '核心命题' },
     extras[0],

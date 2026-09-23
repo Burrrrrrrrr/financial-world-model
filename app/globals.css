@@ -7,6 +7,7 @@
 @import './components/GlobalBanksPrint.css';
 @import './components/GlobalCyclePrint.css';
 @import './components/EmergingMarketsPrint.css';
+@import './components/PolicyAutonomyPrint.css';
 
 :root {
   --font-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;

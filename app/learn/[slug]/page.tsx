@@ -16,7 +16,7 @@ const readingPaths = [
   { id: 'rules' as const, label: '法域规则', intro: (count: number) => `这 ${count} 项按本节实际涉及的主体、产品和法域分支排列；不要把不同规则串成一条全球标准。` },
 ];
 
-const publicationPrintLessonIds = new Set(['4.02', '4.03', '4.04', '4.05', '4.06', '4.07', '4.08']);
+const publicationPrintLessonIds = new Set(['4.02', '4.03', '4.04', '4.05', '4.06', '4.07', '4.08', '4.09']);
 const interactivePrintSectionIds = new Set([
   'international-monetary-interactive-section',
   'safe-asset-interactive-section',
