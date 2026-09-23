@@ -1,0 +1,188 @@
+import { emCapitalFlowLabAudit } from '../components/emCapitalFlowLabs';
+
+export const emCapitalFlowReviewedBodySha256 = 'f11df44e97e61d9da99f7d4b8962472a4fd4e4a92fea7ca26edb00ba06970fa8';
+
+export const canonicalEmCapitalFlowFields = [
+  'schemaVersion',
+  'stateId',
+  'scopePassport',
+  'prerequisiteContracts',
+  'measurementState',
+  'grossFlowState',
+  'compositionState',
+  'driverState',
+  'countryFilterState',
+  'balanceSheetState',
+  'marketAbsorptionState',
+  'eventState',
+  'policyBufferState',
+  'falsificationState',
+  'evidenceClock',
+  'evidenceState',
+  'downstreamRoutes',
+  'observedSnapshots',
+  'realDataAdapters',
+] as const;
+
+export const canonicalEmCapitalFlowStateExample = {
+  schemaVersion: 'em-capital-flow-state/v1',
+  stateId: 'AUTHOR-SYN-4.08-CANONICAL-R1',
+  scopePassport: {
+    object: 'cross-border capital-flow composition and emerging-market transmission teaching contract',
+    universe: ['C1: two gross legs across three mutually exclusive functional-category cells; out-of-scope categories are not coded zero', 'C2: four mutually exclusive residence×instrument×primary-financing routes for one synthetic corporate borrower plus one old-debt maturity window'],
+    unit: 'synthetic integer units only',
+    signConvention: 'C1 positive means the named gross leg increased; C2 values are non-negative route quantities',
+    frequency: 'one synthetic comparison period and one synthetic future cash window; no calendar mapping',
+  },
+  prerequisiteContracts: {
+    lesson321: { imported: 'domestic-entry types and cash-clock semantics only', syntheticValuesImported: false, reviewIdentityImported: false },
+    lesson401: { imported: 'residence, asset/liability, transaction/valuation semantics only', syntheticValuesImported: false, reviewIdentityImported: false },
+    lesson405: { imported: 'entity/currency/horizon, hedge and price-quantity-access semantics only', syntheticValuesImported: false, reviewIdentityImported: false },
+    lesson406: { imported: 'typed credit-edge and supply-demand evidence ceiling only', syntheticValuesImported: false, reviewIdentityImported: false },
+    lesson407: { imported: 'global state, loading, local residual and evidence axes only', syntheticValuesImported: false, reviewIdentityImported: false },
+  },
+  measurementState: {
+    observedBopLoaded: false,
+    observedIipLoaded: false,
+    transactionPositionValuationSeparated: true,
+    grossMeansTurnover: false,
+    sourceSignPreserved: true,
+    bpm7UniformHistoricalImplementationAssumed: false,
+  },
+  grossFlowState: {
+    nonresidentLeg: 'author-syn-only' as const,
+    residentLeg: 'author-syn-only' as const,
+    netComputedFromDeclaredLegs: true,
+    netCanRecoverBothLegs: false,
+  },
+  compositionState: {
+    functionalCategoryVector: ['direct investment', 'portfolio equity/fund shares', 'portfolio debt securities', 'financial derivatives', 'other investment', 'reserve assets'],
+    instrumentAttributesStoredSeparately: true,
+    routes: ['nonresident bank short-term FX loan', 'nonresident primary subscription of long-term local-currency bond', 'nonresident primary subscription of non-DI portfolio equity', 'resident-bank local-currency loan'],
+    everySyntheticUnitAssignedToExactlyOneRoute: true,
+    additionalRouteAttributeState: 'unknown' as const,
+    additionalRouteAttributesObserved: false,
+    fixedSafetyRankingAvailable: false,
+    quantitySubstitutionImpliesContractEquivalence: false,
+  },
+  driverState: {
+    globalPush: 'candidate-not-estimated',
+    localPull: 'candidate-not-estimated',
+    pipes: 'candidate-not-estimated',
+    identifiedShock: null,
+  },
+  countryFilterState: {
+    countryBetasEstimated: false,
+    emVulnerabilityRankingAvailable: false,
+    stateDependentLoadingsEstimated: false,
+  },
+  balanceSheetState: {
+    observedCurrencyMismatch: false,
+    observedHedges: false,
+    observedMaturityWall: false,
+    solvencyAndLiquiditySeparated: true,
+    authorSynRolloverGapIsRealEstimate: false,
+  },
+  marketAbsorptionState: {
+    marginalBuyerObserved: false,
+    priceQuantityAccessSeparated: true,
+    fundFlowsEqualBopPortfolioFlows: false,
+    supplyShockIdentified: false,
+  },
+  eventState: {
+    authorSynLabelsOnly: true,
+    realTimeThresholdEstimated: false,
+    stopImpliesCrisis: false,
+    eventImpliesCausalDriver: false,
+  },
+  policyBufferState: {
+    observedUsableReserves: false,
+    policyEffectIdentified: false,
+    policyAutonomyAssessed: false,
+    welfareOptimalityAssessed: false,
+  },
+  falsificationState: {
+    maintainedCounterexamples: [
+      'net change zero with simultaneous stop and retrenchment',
+      'position increase with a negative transaction',
+      'total funding unchanged with a positive rollover gap',
+      'route identity changes while every declared additional attribute outside the route definition matches; only those extra fields may be called matched',
+      'foreign sales absorbed by local buyers without a fixed price response',
+      'high global loading but small outcome after buffers or a low loading with a large local residual',
+    ],
+  },
+  evidenceClock: {
+    authoredAt: '2026-09-22T00:00:00Z',
+    realDataAsOf: null,
+    pitClock: null,
+    historicalReplayClock: null,
+  },
+  evidenceState: {
+    authorFiniteAuditIsIndependentReview: false,
+    independentReviews: [
+      {
+        kind: 'accuracy',
+        decision: 'approved',
+        revision: '4.08-r1',
+        completedAt: '2026-09-22T23:59:12Z',
+        path: 'tmp/qa/4-08-accuracy-body-r4-review.md',
+        reportSha256: 'eb985294642de4583fc3529fefd089c335e93f26fda625acd9840313d84f68ac',
+        approvedBodySha256: emCapitalFlowReviewedBodySha256,
+        severityCounts: { p1: 0, p2: 0, p3: 0 },
+      },
+      {
+        kind: 'pedagogy',
+        decision: 'approved',
+        revision: '4.08-r1',
+        completedAt: '2026-09-23T00:02:49Z',
+        path: 'tmp/qa/4-08-pedagogy-body-r4-review.md',
+        reportSha256: '566371c012f51f9f02380d0c4cb684b26d1780f752bfacd3996e0ed9f25d2cef',
+        approvedBodySha256: emCapitalFlowReviewedBodySha256,
+        severityCounts: { p1: 0, p2: 0, p3: 0 },
+      },
+    ] as const,
+    bodyApprovedByTwoIndependentReviewers: true,
+    runtimeDeliveryQa: {
+      decision: 'passed',
+      completedAt: '2026-09-22T23:59:09Z',
+      path: 'tmp/qa/4-08-runtime-r4-review.md',
+      reportSha256: '57172e78fd47047bb8e1fee38a2b22feb76bb681c298511d31589cedcd030e71',
+      approvedBodySha256: emCapitalFlowReviewedBodySha256,
+      covers: ['desktop', 'C1/C2', 'quiz', '390px', '200% equivalent', 'no-JavaScript', 'A4 print', 'GitHub Pages basePath'],
+    },
+    observedDataImported: false,
+    pointInTimeCertified: false,
+    causalEffectIdentified: false,
+    predictionEstimated: false,
+    outOfSampleValidated: false,
+    tradingEligibility: false,
+    productionEligibility: false,
+  },
+  downstreamRoutes: {
+    lesson409: 'typed flow, currency, maturity, investor-base and policy-state inputs only',
+    lesson420: 'resident/nonresident directions and marginal absorber only',
+    lesson421: 'typed pipes, timing and common-shock alternatives only',
+    lesson710: 'country×instrument×direction×state exposure vector only',
+    lesson715: 'versioned real-time event labels only',
+    lesson717: 'supply-demand identification problem and falsifiers only',
+    lesson728: 'external exposure vector only; no country rank or trading signal',
+  },
+  observedSnapshots: [] as unknown[],
+  realDataAdapters: [] as unknown[],
+} as const;
+
+export const canonicalEmCapitalFlowAuthorAudit = [
+  { key: 'canonical state exposes every declared top-level field exactly once', passed: JSON.stringify(Object.keys(canonicalEmCapitalFlowStateExample)) === JSON.stringify(canonicalEmCapitalFlowFields) },
+  { key: 'upstream synthetic values and review identities are not inherited', passed: Object.values(canonicalEmCapitalFlowStateExample.prerequisiteContracts).every(contract => !contract.syntheticValuesImported && !contract.reviewIdentityImported) },
+  { key: 'measurement keeps transactions positions valuation and gross turnover boundaries explicit', passed: canonicalEmCapitalFlowStateExample.measurementState.transactionPositionValuationSeparated && !canonicalEmCapitalFlowStateExample.measurementState.grossMeansTurnover && !canonicalEmCapitalFlowStateExample.measurementState.bpm7UniformHistoricalImplementationAssumed },
+  { key: 'functional categories instrument attributes and mutually exclusive synthetic funding routes remain separate', passed: canonicalEmCapitalFlowStateExample.compositionState.functionalCategoryVector.length === 6 && canonicalEmCapitalFlowStateExample.compositionState.instrumentAttributesStoredSeparately && canonicalEmCapitalFlowStateExample.compositionState.routes.length === 4 && canonicalEmCapitalFlowStateExample.compositionState.everySyntheticUnitAssignedToExactlyOneRoute && canonicalEmCapitalFlowStateExample.compositionState.additionalRouteAttributeState === 'unknown' },
+  { key: 'net route and event teaching fields do not invent real-world identification', passed: !canonicalEmCapitalFlowStateExample.grossFlowState.netCanRecoverBothLegs && !canonicalEmCapitalFlowStateExample.compositionState.fixedSafetyRankingAvailable && canonicalEmCapitalFlowStateExample.driverState.identifiedShock === null && !canonicalEmCapitalFlowStateExample.eventState.stopImpliesCrisis },
+  { key: 'two independent approvals bind the same frozen body while author audit remains separate', passed: !canonicalEmCapitalFlowStateExample.evidenceState.authorFiniteAuditIsIndependentReview && canonicalEmCapitalFlowStateExample.evidenceState.independentReviews.length === 2 && canonicalEmCapitalFlowStateExample.evidenceState.independentReviews.every(review => review.decision === 'approved' && review.revision === '4.08-r1' && review.approvedBodySha256 === emCapitalFlowReviewedBodySha256 && review.severityCounts.p1 === 0 && review.severityCounts.p2 === 0 && review.severityCounts.p3 === 0) && canonicalEmCapitalFlowStateExample.evidenceState.bodyApprovedByTwoIndependentReviewers },
+  { key: 'runtime delivery QA is separate from content review and empirical evidence', passed: canonicalEmCapitalFlowStateExample.evidenceState.runtimeDeliveryQa.decision === 'passed' && canonicalEmCapitalFlowStateExample.evidenceState.runtimeDeliveryQa.approvedBodySha256 === emCapitalFlowReviewedBodySha256 && canonicalEmCapitalFlowStateExample.evidenceState.runtimeDeliveryQa.covers.length === 8 },
+  { key: 'observed PIT causal prediction OOS trading and production claims remain false', passed: !canonicalEmCapitalFlowStateExample.evidenceState.observedDataImported && !canonicalEmCapitalFlowStateExample.evidenceState.pointInTimeCertified && !canonicalEmCapitalFlowStateExample.evidenceState.causalEffectIdentified && !canonicalEmCapitalFlowStateExample.evidenceState.predictionEstimated && !canonicalEmCapitalFlowStateExample.evidenceState.outOfSampleValidated && !canonicalEmCapitalFlowStateExample.evidenceState.tradingEligibility && !canonicalEmCapitalFlowStateExample.evidenceState.productionEligibility },
+  { key: 'all finite AUTHOR-SYN lab arithmetic audits pass', passed: emCapitalFlowLabAudit.every(item => item.passed) },
+] as const;
+
+if (!canonicalEmCapitalFlowAuthorAudit.every(item => item.passed)) {
+  throw new Error(`4.08 canonical state audit failed: ${canonicalEmCapitalFlowAuthorAudit.filter(item => !item.passed).map(item => item.key).join(', ')}`);
+}

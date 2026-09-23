@@ -257,7 +257,7 @@ export const lesson407: LessonRecord = {
   reviewStatus: 'double-reviewed',
   reviews: lesson407Reviews,
   previous: { slug: '4-06', label: '4.06 Global Banks 与 Cross-border Credit' },
-  next: { label: '4.08 Capital Flows into Emerging Markets' },
+  next: { slug: '4-08', label: '4.08 Capital Flows into Emerging Markets' },
   sections: [
     { id: 'thesis', label: '核心命题' },
     extras[0],

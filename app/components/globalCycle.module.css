@@ -55,6 +55,7 @@
 .neutral { background: #eef1f2; color: #42545d; }
 .static { min-width: 0; max-width: 100%; border-top: 1px solid var(--border); background: #f8fafc; padding: .9rem 1.2rem 1.2rem; overflow-wrap: anywhere; }
 .static > summary { cursor: pointer; color: #244f76; font-weight: 760; }
+.noJsNotice { margin: 0 0 .8rem; border-left: 4px solid #356f9d; background: #edf4fa; padding: .7rem .8rem; color: #244f76; line-height: 1.65; }
 .fixedRecord { margin-top: .85rem; min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
 .fixedWarning { border-left: 4px solid #c4952f; border-radius: 0 10px 10px 0; background: #fff7df; padding: .7rem .8rem; }
 .formula { overflow-x: auto; border-radius: 12px; background: #152f45; color: #f2f7fb; padding: .8rem 1rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9rem; }
